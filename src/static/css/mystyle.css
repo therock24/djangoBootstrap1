@@ -1,0 +1,207 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'MontSerrat';
+    font-style: normal;
+    src: local('MontSerrat'), url('/static/fonts/Montserrat-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MontSerrat-Bold';
+    font-style: normal;
+    src: local('MontSerrat-Bold'), url('/static/fonts/Montserrat-Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'MontSerrat-Black';
+    font-style: normal;
+    src: local('MontSerrat-Black'), url('/static/fonts/Montserrat-Black.otf') format('opentype');
+}
+
+
+/* Headings */
+
+h2 {
+    color: #C20000;
+    font-family: MontSerrat-Black;
+    font-weight: bold;
+}
+
+
+
+/* Navbar */
+
+
+.navbar-custom {
+    background-color: #C20000;
+}
+
+.navbar-logo {
+    width: 25%;
+    height: auto;
+}
+
+.navbar-text {
+    color: #ffffff;
+    font-family: MontSerrat-Bold;
+}
+
+.navbar-lang-item {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.navbar-bars {
+    color: #ffffff;
+}
+
+/* Text */
+
+.text-21pt {
+    font-family: MontSerrat;
+    font-size: 12px;
+}
+
+.text-21pt-white {
+    font-family: MontSerrat;
+    font-size: 12px;
+    color: white;
+}
+
+.text-25pt-bold {
+    font-family: MontSerrat-Bold;
+    font-size: 25pt;
+}
+
+/* About us */
+
+.about-pic-label {
+    color: #143867;
+    font-family: MontSerrat;
+    font-size: 11px;
+}
+
+.about-text {
+    color: #143867;
+    font-family: MontSerrat;
+    font-size: 14px;
+}
+
+.about-text-bold {
+    color: #143867;
+    font-family: MontSerrat-Bold;
+    font-size: 14px;
+}
+
+.about-subtitle-bold {
+    color: #143867;
+    font-family: MontSerrat-Bold;
+    font-size: 18px;
+}
+
+/* Services */
+
+.services-title-bold {
+    color: #143867;
+    font-family: MontSerrat-Bold;
+    font-size: 18px;
+}
+
+.services-text {
+    color: #143867;
+    font-family: MontSerrat;
+    font-size: 14px;
+}
+
+.services-button {
+    font-family: MontSerrat-Bold;
+    background-color: #C20000;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    width: 100%;
+}
+
+.services-collapse-border {
+    border-color: #C20000;
+    border-radius: 15px;
+}
+
+.services-collapse-icon
+ {
+     width: 20px;
+     height: 20px;
+ }
+
+ .services-collapse-dropdown-text
+ {
+    color: #143867;
+    font-family: MontSerrat-Bold;
+    font-size: 15px;
+ }
+
+
+
+
+/* Contacts container */
+
+.contact-form-text {
+    font-family: MontSerrat;
+    color: #ffffff;
+}
+
+.contact-form-field {
+    border-radius: 15px;
+}
+
+.contact-button {
+    font-family: MontSerrat-Bold;
+    background-color: #C20000;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    width: 50%;
+}
+
+.contact-button:hover {
+    background-color: #C46161;
+    color: white;
+}
+
+.contact-h4 {
+    font-family: MontSerrat-Bold;
+    color: #ffffff;
+}
+
+.contact-icon {
+    color: #ffffff;
+}
+
+.container-contacts {
+    background-color: #143867;
+}
+
+
+/* Footer */
+
+.container-footer {
+    background-color: #143867;
+}
+
+.copyright-text {
+    font-family: MontSerrat;
+    font-size: 10px;
+    color: #ffffff;
+}

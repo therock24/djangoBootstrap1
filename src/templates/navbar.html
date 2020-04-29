@@ -1,0 +1,56 @@
+{% load static %}
+{% load i18n %}
+
+<nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+        <div class="container">
+             <!-- logo png -->
+            <a class="navbar-brand" href="">
+		        <img src="{% static 'img/logo.svg' %}" class="navbar-logo" alt="logo">
+		    </a>
+		    <!-- end logo png -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars navbar-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mr-4">
+                        <a class="nav-link navbar-text" href="#about">{%trans "Sobre nós"%}</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link navbar-text" href="#services">{%trans "Serviços"%}</a>
+                    </li>
+                    <li class="nav-item mr-4">
+                        <a class="nav-link navbar-text" href="#portfolio">{%trans "Portefólio"%}</a>
+                    </li>
+                    <li class="nav-item pr-5">
+                        <a class="nav-link navbar-text" href="#contacts">{%trans "Contactos"%}</a>
+                    </li>
+                    <li class="nav-item">
+                        <ul class="list-inline">
+                            <li class="list-inline-item navbar-lang-item">
+                                <a class="nav-link navbar-text" href="#contacts">PT</a>
+                            </li>
+                            <li class="list-inline-item navbar-lang-item">
+                                <a class="nav-link navbar-text" href="#contacts">EN</a>
+                            </li>
+                            <li class="list-inline-item navbar-lang-item">
+                                <a class="nav-link navbar-text" href="#contacts">FR</a>
+                            </li>
+                        </ul>  
+                    </li>
+                
+                </ul>
+             </div>
+               <!-- <ul class="nav navbar-nav navbar-right ml-">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#" class="language" rel="it-IT"><img src="assets/img/it_IT.png" alt="Italiano" /></a></li>
+                            <li><a href="#" class="language" rel="en-US"><img src="assets/img/en_US.png" alt="English" /></a></li>
+                        </ul>
+                    </li>
+                </ul>-->
+           
+        </div>
+    </nav>
