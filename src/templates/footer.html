@@ -4,6 +4,16 @@
 <!-- Copyright -->
     <div class="container-fluid container-footer footer-copyright text-center py-3">
     <p class="copyright-text">© 2020
-        <a href="https://margemfrontal.com/"> Margem Frontal</a> - Todos os direitos reservados</p>
+        <a href="https://margemfrontal.com/"> Margem Frontal</a> - {% trans "Todos os direitos reservados" %}</p>
     </div>
 <!-- Copyright -->
+
+{% get_current_language as LANGUAGE_CODE %}
+<!-- Current language: {{ LANGUAGE_CODE }} -->
+<p>{% trans "Welcome to our page" %}</p>
+
+{% language 'fr' %}
+    {% get_current_language as LANGUAGE_CODE %}
+    <!-- Current language: {{ LANGUAGE_CODE }} -->
+    <p>{% trans "Welcome to our page" %}</p>
+{% endlanguage %}

@@ -1,0 +1,498 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-30 11:15+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: templates/about.html:5
+msgid "SOBRE NÓS"
+msgstr "About Us"
+
+#: templates/about.html:10
+msgid ""
+"A <b class=\"about-text-bold\">Margem Frontal</b> é uma empresa nacional que "
+"presta um serviço a particulares e empresas ao nível da compra "
+"(investimento\n"
+"                                            imobiliário), venda de imóveis, "
+"obras de remodelação\n"
+"                                            e construção de casas e de "
+"edifícios. Ainda somos especialistas\n"
+"                                            na colocação de alarmes, câmaras "
+"de videovigilância,\n"
+"                                            portas, etc, quer a nível "
+"pessoal como empresarial. Mais\n"
+"                                            recentemente comercializámos "
+"produtos alimentares e bebidas."
+msgstr ""
+"<b class=\"about-text-bold\">Margem Frontal</b> is a portuguese company that "
+"provides services to individuals and companies in terms of purchasing"
+"(real\n"
+"                                            estate investment), property sales, "
+"remodeling\n"
+"                                            and construction of houses and "
+"buildings. We are also specialists\n"
+"                                            in the placement of alarms, video surveillance "
+"cameras,\n"
+"                                            doors, etc, both at a "
+"personal and business level. More\n"
+"                                            recently we have marketed "
+"food products and beverages."
+
+#: templates/about.html:16
+msgid ""
+" \n"
+"                                            Com <b class=\"about-text-bold"
+"\">mais de 20 anos de experiência</b> a atuar em Portugal e\n"
+"                                            em alguns países europeus, "
+"africanos e americanos, como\n"
+"                                            França, Espanha, Uruguai, "
+"Inglaterra, Peru, Gâmbia, Senegal,\n"
+"                                            Guiné, Angola, Costa de Marfim, "
+"Moçambique, Cabo-\n"
+"                                            -verde, entre outros.<br>\n"
+"                                            Procurámos trabalhar com o "
+"intuito de conseguir parcerias\n"
+"                                            com produtos e fabricantes "
+"europeus para conseguir a\n"
+"                                            melhor relação qualidade/preço "
+"para os nossos clientes."
+msgstr ""
+" \n"
+"                                            With <b class=\"about-text-bold"
+"\">over 20 years of experience</b> working in Portugal and\n"
+"                                            in some European, "
+"African and American countries, such as\n"
+"                                            France, Spain, Urugay, "
+"England, Peru, Gambia, Senegal,\n"
+"                                            Guinea, Angola, Ivory Coast, "
+"Mozambique, Cape-\n"
+"                                            -verde, among others.<br>\n"
+"                                            We look forward to work with the "
+"intention of obtaining partnerships\n"
+"                                            with European "
+"products and manufacturers to achieve the\n"
+"                                            best quality/price ratio "
+"for our customers."
+
+#: templates/about.html:33
+msgid "A nossa Missão"
+msgstr "Our Mission"
+
+#: templates/about.html:34
+msgid ""
+"Trabalhámos diariamente para prestar um serviço de aconselhamento para "
+"ajudar as famílias\n"
+"                        e empresas, quer a nível nacional como "
+"internacional, a beneficiarem das melhores condições,\n"
+"                        dando qualidade e preços nos nossos serviços "
+"prestados."
+msgstr ""
+"We work daily to provide a counseling service to "
+"help families\n"
+"                        and companies, both nationally and "
+"internationally, to benefit from the best conditions,\n"
+"                        providing quality and prices in our "
+"services."
+
+#: templates/contact_form.html:5
+msgid "CONTACTE-NOS"
+msgstr "Contact-us"
+
+#: templates/contact_form.html:10
+msgid "Nome"
+msgstr "Name"
+
+#: templates/contact_form.html:16
+msgid "Email"
+msgstr "Email"
+
+#: templates/contact_form.html:22
+msgid "Pais"
+msgstr "Country"
+
+#: templates/contact_form.html:26
+msgid "Assunto"
+msgstr "Subject"
+
+#: templates/contact_form.html:32
+msgid "Mensagem"
+msgstr "Message"
+
+#: templates/contact_form.html:37
+msgid "Enviar"
+msgstr "Send"
+
+#: templates/contacts.html:7
+msgid "CONTACTOS"
+msgstr "CONTACTS"
+
+#: templates/content_service1.html:4
+msgid ""
+"Garantimos sempre a melhor\n"
+"                                                relação na Construção, "
+"Remodelação\n"
+"                                                ou Ampliação do seu\n"
+"                                                imóvel."
+msgstr ""
+"We always guarantee the best\n"
+"                                                relation in the Construction, "
+"Remodelling\n"
+"                                                or Expansion of your\n"
+"                                                property."
+
+#: templates/content_service1.html:7
+msgid ""
+"\n"
+"                                                Temos soluções construtivas\n"
+"                                                que vão desde o tradicional "
+"às\n"
+"                                                soluções mais avançadas, ao\n"
+"                                                melhor preço e sem "
+"preocupações."
+msgstr ""
+"\n"
+"                                                We have Constructive solutions \n"
+"                                                that go from the traditional "
+"to\n"
+"                                                the most advanced solutions, at\n"
+"                                                the best price and "
+"without worries."
+
+#: templates/content_service2.html:4
+msgid ""
+"Protege o que realmente importa,\n"
+"                                                                para si, "
+"para a sua família\n"
+"                                                                e para a sua "
+"empresa."
+msgstr ""
+"Protects what really matters,\n"
+"                                                                to you, "
+"your family\n"
+"                                                                and your "
+"business."
+
+#: templates/content_service2.html:6
+msgid ""
+"\n"
+"                                                                Sabemos que "
+"os ladrões controlam\n"
+"                                                                os seus "
+"movimentos na\n"
+"                                                                sua casa ou "
+"no seu local de trabalho."
+msgstr ""
+"\n"
+"                                                                We know that "
+"thieves control\n"
+"                                                                your "
+"movements in\n"
+"                                                                your home or "
+"workplace."
+
+#: templates/content_service2.html:9
+msgid ""
+"\n"
+"                                                                Os nossos "
+"serviços de segurança\n"
+"                                                                incluem "
+"alarmes, portas,\n"
+"                                                                CCTV e "
+"caixilharias de alumínio"
+msgstr ""
+"\n"
+"                                                                Our "
+"security services\n"
+"                                                                include "
+"alarms, doors,\n"
+"                                                                CCTV and "
+"aluminum window frames"
+
+#: templates/content_service3.html:4
+msgid ""
+"Conheça a vasta gama de produtos\n"
+"                                                            que temos à sua "
+"disposição\n"
+"                                                            com garantia de "
+"uma elevada\n"
+"                                                            qualidade."
+msgstr ""
+"Discover the wide range of products\n"
+"                                                            we have at your "
+"disposal\n"
+"                                                            with guaranteed"
+"high\n"
+"                                                            quality."
+
+#: templates/content_service3.html:14
+msgid "Sabão e Perfumaria"
+msgstr "Soap and Perfurmery"
+
+#: templates/content_service3.html:15
+msgid "Refeições pré-cozinhadas"
+msgstr "Pre-cooked meals"
+
+#: templates/content_service3.html:16
+msgid "Produtos lácteos"
+msgstr "Dairy products"
+
+#: templates/content_service3.html:17
+msgid "Presunto"
+msgstr "Ham"
+
+#: templates/content_service3.html:18
+msgid "Molhos e Vinagres"
+msgstr "Sauces and Vinegars"
+
+#: templates/content_service3.html:19
+msgid "Mel"
+msgstr "Honey"
+
+#: templates/content_service3.html:20
+msgid "Legumes e Vegetais em conserva"
+msgstr "Preserved Vegetables and Vegetables"
+
+#: templates/content_service3.html:21
+msgid "Frutas"
+msgstr "Fruits"
+
+#: templates/content_service3.html:22
+msgid "Legumes"
+msgstr "Vegetables"
+
+#: templates/content_service3.html:23
+msgid "Fatiados"
+msgstr "Sliced"
+
+#: templates/content_service3.html:24
+msgid "Conservas de Peixe"
+msgstr "Canned Fish"
+
+#: templates/content_service3.html:25
+msgid "Compotas em tubo"
+msgstr "Tube jams"
+
+#: templates/content_service3.html:26
+msgid "Bacalhau congelado"
+msgstr "Frozen codfish"
+
+#: templates/content_service3.html:27
+msgid "Bacalhau gourmet"
+msgstr "Gourmet codfish"
+
+#: templates/content_service3.html:28
+msgid "Bacalhau seco e salgado"
+msgstr "Dry and salted codfish"
+
+#: templates/content_service3.html:29
+msgid "Bacalhau semi seco"
+msgstr "Semi dry codfish"
+
+#: templates/content_service3.html:30
+msgid "Outros peixes"
+msgstr "Other fish"
+
+#: templates/content_service3.html:31
+msgid "Azeitonas"
+msgstr "Olives"
+
+#: templates/content_service3.html:32
+msgid "Azeite"
+msgstr "Olive oil"
+
+#: templates/content_service3.html:41
+msgid "Refrigerantes"
+msgstr "Soft drinks"
+
+#: templates/content_service3.html:42
+msgid "Vinho regional"
+msgstr "Regional wine"
+
+#: templates/content_service3.html:43
+msgid "Vinho Verde"
+msgstr "Green wine"
+
+#: templates/content_service3.html:44
+msgid "Vinho do Tejo"
+msgstr "Tagus wine"
+
+#: templates/content_service3.html:45
+msgid "Vinho do Porto"
+msgstr "Port wine"
+
+#: templates/content_service3.html:46
+msgid "Vinho do Douro"
+msgstr "Douro wine"
+
+#: templates/content_service3.html:47
+msgid "Vinho do Alentejo"
+msgstr "Alentejo wine"
+
+#: templates/content_service3.html:48
+msgid "Cerveja Artesanal"
+msgstr "Craft beer"
+
+#: templates/content_service3.html:49
+msgid "Água mineral"
+msgstr "Mineral water"
+
+#: templates/content_service3.html:57
+msgid "Aviões comerciais"
+msgstr "Commercial aircraft"
+
+#: templates/content_service3.html:58
+msgid "Aviões militares"
+msgstr "Military aircraft"
+
+#: templates/content_service3.html:59
+msgid "Helicópteros comerciais"
+msgstr "Commercial helicopters"
+
+#: templates/content_service3.html:60
+msgid "Aeronave LA-8"
+msgstr "LA-8 aircraft"
+
+#: templates/content_service3.html:61
+msgid "Aeronave Boney"
+msgstr "Boney aircraft"
+
+#: templates/content_service3.html:62
+msgid "Aeronave Sila 450C"
+msgstr "Sila 450C aircraft"
+
+#: templates/content_service3.html:63
+msgid "Aeronave Sila 750MT"
+msgstr "Sila 750MT aircraft"
+
+#: templates/content_service3.html:64
+msgid "Aeronave Sila 750"
+msgstr "Sila 750 aircraft"
+
+#: templates/content_service3.html:65
+msgid "Manutenção de aeronaves"
+msgstr "Aircraft maintenance"
+
+#: templates/content_service4.html:4
+msgid ""
+"Investimentos imobiliários ao\n"
+"                                                            longo de várias "
+"áreas de serviço."
+msgstr ""
+"Real estate investments over\n"
+"                                                            several "
+"service areas."
+
+#: templates/content_service4.html:5
+msgid ""
+"\n"
+"                                                            Investimentos e "
+"vendas na\n"
+"                                                            área da Saúde, "
+"Geriatria, Energias\n"
+"                                                            Renováveis e em "
+"outras\n"
+"                                                            áreas."
+msgstr ""
+"\n"
+"                                                            Investments "
+"in\n"
+"                                                            Health, "
+"Geriatrics, Renewable\n"
+"                                                            Energies and "
+"other\n"
+"                                                            investments."
+
+#: templates/content_service5.html:4
+msgid ""
+"Exportações e importações, levamos\n"
+"                                                            até si uma vasta "
+"gama\n"
+"                                                            de produtos de "
+"elevada qualidade,\n"
+"                                                            facilitando o "
+"acesso a\n"
+"                                                            produtos "
+"internacionais com\n"
+"                                                            uma relação "
+"qualidade / preço,\n"
+"                                                            altamente "
+"competitiva."
+msgstr ""
+"Exports and imports, we bring\n"
+"                                                            you a wide "
+"range\n"
+"                                                            of high quality "
+"products,\n"
+"                                                            facilitating "
+"access\n"
+"                                                            to international "
+"products with\n"
+"                                                            a highly competitive "
+"price /quality,\n"
+"                                                            ratio "
+""
+
+#: templates/footer.html:7
+msgid "Todos os direitos reservados"
+msgstr "All rights reserved."
+
+#: templates/navbar.html:18
+msgid "Sobre nós"
+msgstr "About us"
+
+#: templates/navbar.html:21
+msgid "Serviços"
+msgstr "Services"
+
+#: templates/navbar.html:24
+msgid "Portefólio"
+msgstr "Portfolio"
+
+#: templates/navbar.html:27
+msgid "Contactos"
+msgstr "Contacts"
+
+#: templates/portfolio.html:5
+msgid "PORTEFÓLIO"
+msgstr "PORTFOLIO"
+
+#: templates/services.html:5
+msgid "SERVIÇOS"
+msgstr "SERVICES"
+
+#: templates/services.html:12 templates/services.html:43
+msgid "Mediação Imobiliária"
+msgstr "Construction Mediation"
+
+#: templates/services.html:17 templates/services.html:49
+msgid "Alarmes e Portas"
+msgstr "Door Alarms"
+
+#: templates/services.html:22 templates/services.html:55
+msgid "Produtos, Alimentos e Bebidas"
+msgstr "Products, Food and Beverage"
+
+#: templates/services.html:28
+msgid "Investimento Mobiliário"
+msgstr "Real Estate Investment"
+
+#: templates/services.html:33 templates/services.html:67
+msgid "Trading"
+msgstr "Trading"
+
+#: templates/services.html:61
+msgid "Investimento Imobiliário"
+msgstr "Real Estate Investment"

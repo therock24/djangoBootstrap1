@@ -1,0 +1,40 @@
+{% load static %}
+{% load i18n %}
+
+    <div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
+        <h2 class="text-center pb-5">{%trans "CONTACTE-NOS"%}</h2>
+        
+        <form class="needs-validation col-lg-6 offset-lg-3" novalidate>
+            <div class="form-row justify-content-center">
+                <div class="col-md-8 mb-3">
+                    <label for="validationTooltip01" class="contact-form-text" >{%trans "Nome" %}</label>
+                    <input type="text" class="form-control contact-form-field" required>
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-md-8 mb-3">
+                    <label class="contact-form-text">{%trans "Email" %}</label>
+                    <input type="text" class="form-control contact-form-field" required>
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-md-4 mb-3">
+                    <label class="contact-form-text">{%trans "Pais" %}</label>
+                        <input type="text" class="form-control contact-form-field" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label class="contact-form-text">{%trans "Assunto" %}</label>
+                        <input type="text" class="form-control contact-form-field" required>
+                </div>
+            </div>
+            <div class="form-row justify-content-center">
+                <div class="col-md-8 mb-3">
+                    <label class="contact-form-text">{%trans "Mensagem" %}</label>
+                    <textarea rows="5" class="form-control contact-form-field"  id="message" required></textarea>
+                </div>
+            </div>
+            <div class="col text-center">
+                <button class="btn btn-primary contact-button" type="submit">{%trans "Enviar"%}</button>
+            </div>
+        </form>
+    </div>

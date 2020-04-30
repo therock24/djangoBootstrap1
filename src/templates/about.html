@@ -1,0 +1,41 @@
+{% load static %}
+{% load i18n %}
+
+  <div id="about" class="container container-fluid pt-5 pb-2">
+        <h2 class="text-center pb-4">{%trans "SOBRE NÓS"%}</h2>
+        <div class="row">
+            <div class="col col-md-8 justify-content-center offset-md-2">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                        <p class="about-text text-justify">{% blocktrans %}A <b class="about-text-bold">Margem Frontal</b> é uma empresa nacional que presta um serviço a particulares e empresas ao nível da compra (investimento
+                                            imobiliário), venda de imóveis, obras de remodelação
+                                            e construção de casas e de edifícios. Ainda somos especialistas
+                                            na colocação de alarmes, câmaras de videovigilância,
+                                            portas, etc, quer a nível pessoal como empresarial. Mais
+                                            recentemente comercializámos produtos alimentares e bebidas.{% endblocktrans %}<br>
+                                            {% blocktrans %} 
+                                            Com <b class="about-text-bold">mais de 20 anos de experiência</b> a atuar em Portugal e
+                                            em alguns países europeus, africanos e americanos, como
+                                            França, Espanha, Uruguai, Inglaterra, Peru, Gâmbia, Senegal,
+                                            Guiné, Angola, Costa de Marfim, Moçambique, Cabo-
+                                            -verde, entre outros.<br>
+                                            Procurámos trabalhar com o intuito de conseguir parcerias
+                                            com produtos e fabricantes europeus para conseguir a
+                                            melhor relação qualidade/preço para os nossos clientes.{% endblocktrans %}</p>
+                    </div>
+                    <div class="col col-md-4 col-lg-4 d-none d-md-block">
+                        <img src="{% static 'img/owner.png' %}" class="img-fluid"></img>
+                        <p class="about-pic-label">António Couto</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <b class="about-subtitle-bold">{%trans 'A nossa Missão'%}</b>
+                        <p class="about-text">{% blocktrans %}Trabalhámos diariamente para prestar um serviço de aconselhamento para ajudar as famílias
+                        e empresas, quer a nível nacional como internacional, a beneficiarem das melhores condições,
+                        dando qualidade e preços nos nossos serviços prestados.{% endblocktrans %}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
