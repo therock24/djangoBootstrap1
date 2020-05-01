@@ -4,25 +4,25 @@
     <div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
         <h2 class="text-center pb-5">{%trans "CONTACTE-NOS"%}</h2>
         
-        <form method="POST" class="needs-validation col-lg-6 offset-lg-3" novalidate>
+        <form action="." method="POST" class="needs-validation col-lg-6 offset-lg-3" novalidate>
              <!-- Very Important csrf Token -->
             {% csrf_token %}
             <div class="form-row justify-content-center">
                 <div class="col-10 col-md-8 mb-3">
-                    <label for="validationTooltip01" class="contact-form-text" >{%trans "Nome" %}</label>
-                    <input type="text" class="form-control contact-form-field" required>
+                    <label for="{{ form.Name.id_for_label }}" class="contact-form-text" >{%trans "Nome" %}</label>
+                    <input type="text" class="form-control contact-form-field" id="{{ form.Name.id_for_label }}" name="{{ form.Name.html_name }}" required>
                 </div>
             </div>
             <div class="form-row justify-content-center">
                 <div class="col-10 col-md-8 mb-3">
-                    <label class="contact-form-text">{%trans "Email" %}</label>
-                    <input type="text" class="form-control contact-form-field" required>
+                    <label for="{{ form.Email.id_for_label }}" class="contact-form-text">{%trans "Email" %}</label>
+                    <input type="text" class="form-control contact-form-field" id="{{ form.Email.id_for_label }}" name="{{ form.Email.html_name }}" required>
                 </div>
             </div>
             <div class="form-row justify-content-center">
                 <div class="col-10 col-md-4 mb-3">
-                    <label class="contact-form-text">{%trans "Pais" %}</label>
-                        <input type="text" class="form-control contact-form-field" required>
+                    <label for="{{ form.Country.id_for_label }}" class="contact-form-text">{%trans "Pais" %}</label>
+                        <input type="text" class="form-control contact-form-field" id="{{ form.Country.id_for_label }}" name="{{ form.Country.html_name }}" required>
                 </div>
                 <div class="col-10 col-md-4 mb-3">
                     <label for="{{ form.Subject.id_for_label }}" class="contact-form-text">{%trans "Assunto" %}</label>                      
@@ -38,7 +38,7 @@
             </div>
             <div class="form-row justify-content-center">
                 <div class="col-10 col-md-8 mb-3">
-                    <label class="contact-form-text">{%trans "Mensagem" %}</label>
+                    <label for="{{ form.Message.id_for_label }}" class="contact-form-text">{%trans "Mensagem" %}</label>
                     <textarea rows="5" class="form-control contact-form-field"  id="message" required></textarea>
                 </div>
             </div>

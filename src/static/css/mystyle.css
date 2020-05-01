@@ -113,13 +113,12 @@ h2 {
     opacity: 1;
     font-family: MontSerrat-Bold;
     font-size: 16px;
-    z-index: 1;
     color:white;
 }
 
 .map-overlay-img {
     opacity: 1;
-    z-index: 1;
+    max-height: 480px;
     color:white;
 }
 
