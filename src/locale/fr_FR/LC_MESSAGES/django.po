@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-01 21:12+0000\n"
+"POT-Creation-Date: 2020-05-01 22:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,6 @@ msgstr "Français"
 #: templates/about.html:5
 msgid "SOBRE NÓS"
 msgstr "À propos de nous"
-
 
 #: templates/about.html:10
 msgid ""
@@ -74,8 +73,7 @@ msgid ""
 "                                            França, Espanha, Uruguai, "
 "Inglaterra, Peru, Gâmbia, Senegal,\n"
 "                                            Guiné, Angola, Costa de Marfim, "
-"Moçambique, Cabo-\n"
-"                                            -verde, entre outros.<br>\n"
+"Moçambique, Cabo-verde, entre outros.<br>\n"
 "                                            Procurámos trabalhar com o "
 "intuito de conseguir parcerias\n"
 "                                            com produtos e fabricantes "
@@ -91,8 +89,7 @@ msgstr ""
 "                                            France, l'Espagne, l'Uruguay, "
 "l'Angleterre, le Pérou Gambie, le Sénégal,\n"
 "                                            la Guinée, l'Angola, la Côte "
-"d'Ivoire, le Mozambique, le Cap\n"
-"                                            -Vert, entre autres.<br>\n"
+"d'Ivoire, le Mozambique, le Cap-Vert, entre autres.<br>\n"
 "                                            Nous avons essayé de travailler "
 "avec l'intention d'obtenir des partenariats\n"
 "                                            avec des produits et fabricants "
@@ -100,11 +97,11 @@ msgstr ""
 "                                            meilleur rapport qualité/prix "
 "pour nos clients."
 
-#: templates/about.html:33
+#: templates/about.html:32
 msgid "A nossa Missão"
 msgstr "Notre mission"
 
-#: templates/about.html:34
+#: templates/about.html:33
 msgid ""
 "Trabalhámos diariamente para prestar um serviço de aconselhamento para "
 "ajudar as famílias\n"
