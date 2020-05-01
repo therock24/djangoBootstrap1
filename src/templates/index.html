@@ -109,20 +109,22 @@
    {% include 'portfolio.html'%}
 
     <!-- CARREIRA (career)-->
-
+    {% get_current_language as LANGUAGE_CODE %}
+    {% if LANGUAGE_CODE == 'pt-pt' %}
     <div class="container-fluid pt-5 pb-5">
         <div class="col text-center mb-3">
             <h2>OPORTUNIDADE DE CARREIRA OU PARCERIA</h2>
         </div>
         <div class="col text-center text-oportunities pb-3">
         Quer fazer parte de uma equipa de profissionais de excelência?<br>
-        Junte-se à Margem Frontal.<br>
+        Junte-se à <b class="oportunities-text-bold">Margem Frontal</b>.<br>
         Entre em contacto connosco, não perca a oportunidade.<br>
         </div>
         <div class="col text-center">
-            <a href="oportunidades/" class="btn btn-primary contact-button" >Oportunidades</a>
+            <a href="oportunidades/" class="btn btn-primary oportunities-button" >Oportunidades</a>
         </div>
     </div>
+    {% endif %}
 
     <!-- CONTACTOS (contacts) -->
     {% include 'contact_form.html' %}

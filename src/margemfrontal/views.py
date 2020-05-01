@@ -9,6 +9,7 @@ def index(request):
     if request.method == 'POST':
         
         sub = forms.Contact(request.POST)
+        print(request.POST)
         subject = 'Nova mensagem enviada através do website '
         message = 'Nova mensagem recebida:' + '\n'\
             'Nome: ' + sub.Name + '\n'\
@@ -29,6 +30,7 @@ def oportunidades(request):
     if request.method == 'POST':
         
         sub = forms.Oportunities(request.POST)
+        print(request.POST)
         subject = 'Nova candidatura enviada através do website '
         message = 'Nova candidatura recebida:' + '\n'\
             'Nome: ' + sub.Name + '\n'\

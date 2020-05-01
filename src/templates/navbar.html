@@ -15,16 +15,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item mr-4">
-                        <a class="nav-link navbar-text" href="#about">{%trans "Sobre nós"%}</a>
+                        <a class="nav-link navbar-text" href="{% url 'index' %}#about">{%trans "Sobre nós"%}</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link navbar-text" href="#services">{%trans "Serviços"%}</a>
+                        <a class="nav-link navbar-text" href="{% url 'index' %}#services">{%trans "Serviços"%}</a>
                     </li>
                     <li class="nav-item mr-4">
-                        <a class="nav-link navbar-text" href="#portfolio">{%trans "Portefólio"%}</a>
+                        <a class="nav-link navbar-text" href="{% url 'index' %}#portfolio">{%trans "Portefólio"%}</a>
                     </li>
                     <li class="nav-item pr-5">
-                        <a class="nav-link navbar-text" href="#contacts">{%trans "Contactos"%}</a>
+                        <a class="nav-link navbar-text" href="{% url 'index' %}#contacts">{%trans "Contactos"%}</a>
                     </li>
                     <li class="nav-item">
                         <form name="lang" action="{% url 'set_language' %}" method="post">{% csrf_token %}
@@ -37,7 +37,7 @@
                         <ul class="list-inline">
                         {% for language in languages %}
                             <li class="list-inline-item navbar-lang-item">
-                                <a class="nav-link navbar-text" href="#" onclick="document.lang.language.value='{{ language.code}}'; document.lang.submit();">{{language.code|upper}}</a>
+                                <a class="nav-link text-white" href="#" onclick="document.lang.language.value='{{ language.code}}'; document.lang.submit();">{{language.code|upper}}</a>
                             </li>
                         {% endfor %}
                         </ul>  

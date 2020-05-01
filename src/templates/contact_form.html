@@ -8,35 +8,42 @@
              <!-- Very Important csrf Token -->
             {% csrf_token %}
             <div class="form-row justify-content-center">
-                <div class="col-md-8 mb-3">
+                <div class="col-10 col-md-8 mb-3">
                     <label for="validationTooltip01" class="contact-form-text" >{%trans "Nome" %}</label>
                     <input type="text" class="form-control contact-form-field" required>
                 </div>
             </div>
             <div class="form-row justify-content-center">
-                <div class="col-md-8 mb-3">
+                <div class="col-10 col-md-8 mb-3">
                     <label class="contact-form-text">{%trans "Email" %}</label>
                     <input type="text" class="form-control contact-form-field" required>
                 </div>
             </div>
             <div class="form-row justify-content-center">
-                <div class="col-md-4 mb-3">
+                <div class="col-10 col-md-4 mb-3">
                     <label class="contact-form-text">{%trans "Pais" %}</label>
                         <input type="text" class="form-control contact-form-field" required>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <label class="contact-form-text">{%trans "Assunto" %}</label>
-                        <input type="text" class="form-control contact-form-field" required>
+                <div class="col-10 col-md-4 mb-3">
+                    <label for="{{ form.Subject.id_for_label }}" class="contact-form-text">{%trans "Assunto" %}</label>                      
+                    <select class="form-control" id="{{ form.Subject.id_for_label }}" name="{{ form.Subject.html_name }}">
+                        <option>{%trans "Mediação de Obras" %}</option>
+                        <option>{%trans "Alarmes e Portas" %}</option>
+                        <option>{%trans "Produtos, Alimentos e Bebidas" %}</option>
+                        <option>{%trans "Investimento Imobiliário" %}</option>
+                        <option>{%trans "Trading" %}</option>
+                        <option>{%trans "Outros" %}</option>          
+                    </select>
                 </div>
             </div>
             <div class="form-row justify-content-center">
-                <div class="col-md-8 mb-3">
+                <div class="col-10 col-md-8 mb-3">
                     <label class="contact-form-text">{%trans "Mensagem" %}</label>
                     <textarea rows="5" class="form-control contact-form-field"  id="message" required></textarea>
                 </div>
             </div>
             <div class="form-row justify-content-center">
-                <div class="col-md-8 mb-3">
+                <div class="col-10 col-md-8 mb-3">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                         <label class="form-check-label contact-form-text" for="defaultCheck1">
