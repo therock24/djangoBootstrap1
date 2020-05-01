@@ -45,11 +45,18 @@
         onRegionClick: function(event, code, region)
         {
             event.preventDefault();
-            var message = 'You clicked "'
-                + region
-                + '" which has the code: '
-                + code.toUpperCase();
-            alert(message);
+            event.stopPropagation();
+            var Regions = ['PT','AO','AR','BR','CI','ES','FR','GN','GB','PE','SN','MZ'];
+            
+            if( Regions.indexOf(code.toUpperCase()) != -1 ){
+                if( $('#map_overlay').is(":hidden") ){
+                    $('#map_overlay').show();
+                 }
+                $('#map_overlay_img').attr('src', 'static/img/countries/'+code+'.jpg');
+                $('#map_overlay_text').text(region);
+            }
+
+          
         },
         onRegionOver: function(event, code)
         {
@@ -57,6 +64,15 @@
         }
         });
       });
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        $("#map_overlay").hide();// hide it initially
+            $('#close_map_overlay').click(function(){
+                $("#map_overlay").hide();                            
+            });
+        });
     </script>
 
     <title>Margem Frontal</title>
@@ -74,9 +90,9 @@
     {% include "overview.html" %}
     <!-- Button trigger modal-->
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPoll">
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPoll">
   Launch demo modal
-</button> 
+</button>--> 
 
 
     
@@ -98,7 +114,7 @@
         <div class="col text-center mb-3">
             <h2>OPORTUNIDADE DE CARREIRA OU PARCERIA</h2>
         </div>
-        <div class="col text-center text-21pt pb-3">
+        <div class="col text-center text-oportunities pb-3">
         Quer fazer parte de uma equipa de profissionais de excelência?<br>
         Junte-se à Margem Frontal.<br>
         Entre em contacto connosco, não perca a oportunidade.<br>
@@ -111,12 +127,9 @@
     <!-- CONTACTOS (contacts) -->
     {% include 'contact_form.html' %}
 
-    {% include 'modal.html' %}
-
     {% include 'contacts.html' %}
 
     {% include 'footer.html'%}
-
 </body>
 
 </html>

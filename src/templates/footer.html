@@ -7,13 +7,3 @@
         <a href="https://margemfrontal.com/"> Margem Frontal</a> - {% trans "Todos os direitos reservados" %}</p>
     </div>
 <!-- Copyright -->
-
-{% get_current_language as LANGUAGE_CODE %}
-<!-- Current language: {{ LANGUAGE_CODE }} -->
-<p>{% trans "Welcome to our page" %}</p>
-
-{% language 'fr' %}
-    {% get_current_language as LANGUAGE_CODE %}
-    <!-- Current language: {{ LANGUAGE_CODE }} -->
-    <p>{% trans "Welcome to our page" %}</p>
-{% endlanguage %}

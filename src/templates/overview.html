@@ -2,8 +2,12 @@
 {% load i18n %}
 
 <div class="container d-none d-sm-block">
-        <div id="vmap" class="d-none d-sm-block" style="height: 576px" class="w-100" >
-            
+        <div id="vmap" class="d-none d-sm-block" style="height: 576px; position: relative;" >
+            <div id="map_overlay" class="map-overlay">
+                <i id="close_map_overlay" class="map-overlay-img fa fa-window-close p-4 position-absolute top-0 right-0"></i>
+                <p id="map_overlay_text" class="map-overlay-text text-center pt-4">Portugal</p>
+                <img id="map_overlay_img" class="map-overlay-img d-block img-fluid px-4 pt-2" src="{% static 'img/countries/ar.jpg' %}" alt="Argentina">
+            </div>
         </div>
     </div>
     <div class="container d-block d-sm-none">

@@ -17,9 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import index, oportunidades
+from django.conf.urls import include, url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('oportunidades/',oportunidades),
+    url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
+

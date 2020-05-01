@@ -32,10 +32,10 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 SECRET_KEY = 'iondy11)u5x$a--@vxt%cb7-ngiv0-bgvdfn2@y0v@6%0qi2^#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
-ALLOWED_HOSTS = ['18.185.47.252']
+ALLOWED_HOSTS = ['18.185.47.252','localhost']
 
 
 # Application definition
@@ -114,12 +114,12 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'pt'
+LANGUAGE_CODE = 'pt-PT'
 
 LANGUAGES = (
+    ('pt-PT', _('Portuguese')),
     ('en-EN', _('English')),
     ('fr-FR', _('French')),
-    ('pt-PT', _('Portuguese')),
 )
 
 TIME_ZONE = 'UTC'

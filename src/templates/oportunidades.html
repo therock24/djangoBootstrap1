@@ -21,42 +21,49 @@
 
 </head>
 
-<body>
+<body class="container-footer">
 
     {% include "navbar.html" %}
-         
-   
+
+    {% ifequal alert "success" %}
+    <div class="alert alert-success" role="alert">
+    {{alertmsg}}
+    </div>
+    {% endifequal %}
+
     <!-- CONTACTOS (contacts) -->
     <div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
         <div class="col-lg-8 offset-lg-2">
             <h2 class="text-center pb-5">OPORTUNIDADE DE CARREIRA OU PARCERIA</h2>
-            <form class="needs-validation " novalidate>
+            <form action="." method="POST" class="needs-validation " novalidate>
+             <!-- Very Important csrf Token -->
+            {% csrf_token %}
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label class="contact-form-text" >Nome</label>
-                        <input type="text" class="form-control contact-form-field" required>
+                        <label for="{{ form.Name.id_for_label }}" class="contact-form-text" >Nome</label>
+                        <input type="text" class="form-control contact-form-field" id="{{ form.Name.id_for_label }}" name="{{ form.Name.html_name }}" required>
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label class="contact-form-text">Email</label>
-                        <input type="text" class="form-control contact-form-field" required>
+                        <label for="{{ form.Email.id_for_label }}" class="contact-form-text">Email</label>
+                        <input type="text" class="form-control contact-form-field" id="{{ form.Email.id_for_label }}" name="{{ form.Email.html_name }}" required>
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-md-3 mb-3">
-                        <label class="contact-form-text">Distrito onde vive</label>
-                            <input type="text" class="form-control contact-form-field" required>
+                        <label for="{{ form.DistrictHome.id_for_label }}" class="contact-form-text">Distrito onde vive</label>
+                            <input type="text" class="form-control contact-form-field" id="{{ form.DistrictHome.id_for_label }}" name="{{ form.DistrictHome.html_name }}" required>
                     </div>
                     <div class="col-md-5 mb-3">
-                        <label class="contact-form-text">Distrito onde pretende colaborar</label>
-                            <input type="text" class="form-control contact-form-field" required>
+                        <label for="{{ form.DistrictWork.id_for_label }}" class="contact-form-text">Distrito onde pretende colaborar</label>
+                            <input type="text" class="form-control contact-form-field" id="{{ form.DistrictWork.id_for_label }}" name="{{ form.DistrictWork.html_name }}" required>
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label class="contact-form-text" for="exampleFormControlSelect1">Preferência</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label class="contact-form-text" for="{{ form.Preference.id_for_label }}">Preferência</label>
+                        <select class="form-control" id="{{ form.Preference.id_for_label }}" name="{{ form.Preference.html_name }}">
                             <option>Diretor Comercial</option>
                             <option>Consultor</option>
                             <option>Comissionista</option>
@@ -67,8 +74,8 @@
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label class="contact-form-text" for="exampleFormControlSelect1">Serviços onde pretende colaborar</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
+                        <label class="contact-form-text" for="{{ form.Service.id_for_label }}">Serviços onde pretende colaborar</label>
+                        <select class="form-control" id="{{ form.Service.id_for_label }}" name="{{ form.Service.html_name }}">
                             <option>Mediação de Obras</option>
                             <option>Alarmes e Portas</option>
                             <option>Produtos, Alimentos e Bebidas</option>
@@ -80,14 +87,14 @@
 
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label class="contact-form-text">Mensagem</label>
-                        <textarea rows="5" class="form-control contact-form-field"  id="message" required></textarea>
+                        <label for="{{ form.Message.id_for_label }}" class="contact-form-text">Mensagem</label>
+                        <textarea rows="5" class="form-control contact-form-field"  id="{{ form.Message.id_for_label }}" name="{{ form.Message.html_name }}" required></textarea>
                     </div>
                 </div>
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                             <label class="form-check-label contact-form-text" for="defaultCheck1">
                                 Aceito fornecer os meus dados à Margem Frontal em ordem a receber
 informações e possíveis oportunidades

@@ -19,7 +19,7 @@ msgstr ""
 
 #: templates/about.html:5
 msgid "SOBRE NÓS"
-msgstr "sdads"
+msgstr "À propos de nous"
 
 #: templates/about.html:10
 msgid ""
@@ -37,6 +37,19 @@ msgid ""
 "                                            recentemente comercializámos "
 "produtos alimentares e bebidas."
 msgstr ""
+"<b class=\"about-text-bold\">Margem Frontal</b> est une enterprise portugaise qui "
+"fournit des services aux particuliers et aux entreprises en termes d'achat "
+"(investimento\n"
+"                                            imobiliário), venda de imóveis, "
+"obras de remodelação\n"
+"                                            e construção de casas e de "
+"edifícios. Ainda somos especialistas\n"
+"                                            na colocação de alarmes, câmaras "
+"de videovigilância,\n"
+"                                            portas, etc, quer a nível "
+"pessoal como empresarial. Mais\n"
+"                                            recentemente comercializámos "
+"produtos alimentares e bebidas."
 
 #: templates/about.html:16
 msgid ""
