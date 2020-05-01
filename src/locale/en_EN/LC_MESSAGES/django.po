@@ -109,7 +109,7 @@ msgstr ""
 
 #: templates/contact_form.html:5
 msgid "CONTACTE-NOS"
-msgstr "Contact-us"
+msgstr "Contact us"
 
 #: templates/contact_form.html:10
 msgid "Nome"
@@ -480,7 +480,7 @@ msgstr "Construction Mediation"
 #: templates/services.html:17 templates/services.html:49
 msgid "Alarmes e Portas"
 msgstr "Door Alarms"
-
+ 
 #: templates/services.html:22 templates/services.html:55
 msgid "Produtos, Alimentos e Bebidas"
 msgstr "Products, Food and Beverage"

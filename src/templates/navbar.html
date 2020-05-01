@@ -27,30 +27,23 @@
                         <a class="nav-link navbar-text" href="#contacts">{%trans "Contactos"%}</a>
                     </li>
                     <li class="nav-item">
+                        <form name="lang" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                        <input name="language" type="hidden"/>
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% get_language_info for LANGUAGE_CODE as lang %}
+                        {% get_available_languages as LANGUAGES %}
+                        {% get_language_info_list for LANGUAGES as languages %}
                         <ul class="list-inline">
+                        {% for language in languages %}
                             <li class="list-inline-item navbar-lang-item">
-                                <a class="nav-link navbar-text" href="#contacts">PT</a>
+                                <a class="nav-link navbar-text" href="#" onclick="document.lang.language.value='{{ language.code}}'; document.lang.submit();">{{language.code|upper}}</a>
                             </li>
-                            <li class="list-inline-item navbar-lang-item">
-                                <a class="nav-link navbar-text" href="#contacts">EN</a>
-                            </li>
-                            <li class="list-inline-item navbar-lang-item">
-                                <a class="nav-link navbar-text" href="#contacts">FR</a>
-                            </li>
+                        {% endfor %}
                         </ul>  
                     </li>
                 
                 </ul>
-             </div>
-               <!-- <ul class="nav navbar-nav navbar-right ml-">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#" class="language" rel="it-IT"><img src="assets/img/it_IT.png" alt="Italiano" /></a></li>
-                            <li><a href="#" class="language" rel="en-US"><img src="assets/img/en_US.png" alt="English" /></a></li>
-                        </ul>
-                    </li>
-                </ul>-->
-           
+             </div>         
         </div>
     </nav>

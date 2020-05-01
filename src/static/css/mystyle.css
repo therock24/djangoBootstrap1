@@ -73,6 +73,32 @@ h2 {
     font-size: 25pt;
 }
 
+/* Map */
+
+.map-overlay {
+    position: absolute;
+    right:0;
+    opacity: 1;
+    background-color: #C20000;
+    width:30%;
+    height:576px;
+}
+
+.map-overlay-text {
+    opacity: 1;
+    font-family: MontSerrat-Bold;
+    font-size: 16px;
+    z-index: 1;
+    color:white;
+}
+
+.map-overlay-img {
+    opacity: 1;
+    z-index: 1;
+    color:white;
+}
+
+
 /* About us */
 
 .about-pic-label {
@@ -139,15 +165,25 @@ h2 {
      height: 20px;
  }
 
- .services-collapse-dropdown-text
+ .services-collapse-dropdown-title
  {
     color: #143867;
     font-family: MontSerrat-Bold;
     font-size: 15px;
  }
 
+ .services-collapse-dropdown-text
+ {
+    color: #143867;
+    font-family: MontSerrat;
+    font-size: 13px;
+ }
 
-
+ /* Oportunities */
+ .text-oportunities {
+    font-family: MontSerrat;
+    font-size: 14px;
+}
 
 /* Contacts container */
 
@@ -202,6 +238,10 @@ h2 {
 
 .copyright-text {
     font-family: MontSerrat;
-    font-size: 10px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.copyright-text a {
     color: #ffffff;
 }
