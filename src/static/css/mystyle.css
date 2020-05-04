@@ -57,16 +57,15 @@ h2 {
 
 .navbar-lang-item {
     color: #ffffff;
-    font-family: MontSerrat-Bold;
+    font-family: MontSerrat;
     margin-right: -10px;
     margin-left: -10px;
+
 }
 
-.navbar-lang-item .active {
+.navbar-lang-item-active {
     color: #ffffff;
     font-family: MontSerrat-Bold;
-    margin-right: -10px;
-    margin-left: -10px;
 }
 
 .navbar-bars {
@@ -176,6 +175,7 @@ h2 {
     overflow: hidden;
     padding-left: 0.3em;
     padding-right: 0.3em;
+    /*outline: 3px dashed black;*/
 }
 .flex-list ul {
     display: flex;
@@ -184,7 +184,7 @@ h2 {
     justify-content: space-between;
     padding-left: 0.1em;
     padding-right: 0.1em;
-    
+
 }
 
 .flex-list li {
@@ -194,8 +194,8 @@ h2 {
     border-left: 1px solid white;
     padding-left: 0.4em;
     padding-right: 0.4em;
+    /*outline: 3px dashed green;*/
 }
-
 
 .services-button {
     font-family: MontSerrat-Bold;
