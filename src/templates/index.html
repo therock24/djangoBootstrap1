@@ -41,13 +41,13 @@
         normalizeFunction: 'linear',
         scaleColors: ['#b6d6ff', '#005ace'],
         selectedColor: '#c20000',
-        selectedRegions: ['PT','AO','AR','BR','CI','ES','FR','GN','GB','PE','SN','MZ'],
+        selectedRegions: ['PT','AO','AR','BR','CI','ES','FR','GN','GB','PE','SN','MZ','UY'],
         showTooltip: true,
         onRegionClick: function(event, code, region)
         {
             event.preventDefault();
             event.stopPropagation();
-            var Regions = ['PT','AO','AR','BR','CI','ES','FR','GN','GB','PE','SN','MZ'];
+            var Regions = ['PT','AO','AR','BR','CI','ES','FR','GN','GB','PE','SN','MZ','UY'];
             
             if( Regions.indexOf(code.toUpperCase()) != -1 ){
                 if( $('#map_overlay').is(":hidden") ){
@@ -61,7 +61,6 @@
         },
         onRegionOver: function(event, code)
         {
-            //event.preventDefault();
         }
         });
       });
@@ -73,8 +72,19 @@
             $('#close_map_overlay').click(function(){
                 $("#map_overlay").hide();                            
             });
+            $("#portfolio_overlay").hide();// hide it initially
+            $('#close_portfolio_overlay').click(function(){
+                $("#portfolio_overlay").hide();                            
+            });
         });
     </script>
+    <script>
+    //function portfolio_overlay_open(imgid){
+    //    $("#portfolio_overlay").show();
+    //    $('#portfolio_overlay_img').attr('src', 'static/img/grid/'+imgid+'.jpg');                            
+    }
+    </script>
+
 
     <title>Margem Frontal</title>
 

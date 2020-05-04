@@ -3,35 +3,39 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-01 22:26+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-05-04 11:19+0000\n"
+"PO-Revision-Date: 2020-05-04 13:01+0100\n"
+"Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
 
 #: margemfrontal/settings.py:139
 msgid "Portuguese"
-msgstr "Portuguese"
+msgstr "Portugués"
 
 #: margemfrontal/settings.py:140
 msgid "English"
-msgstr "English"
+msgstr "Ingles"
 
 #: margemfrontal/settings.py:141
 msgid "French"
-msgstr "French"
+msgstr "Francés"
+
+#: margemfrontal/settings.py:142
+msgid "Spanish"
+msgstr "Espanol"
 
 #: templates/about.html:5
 msgid "SOBRE NÓS"
-msgstr "About Us"
+msgstr "SOBRE NOSOTROS"
 
 #: templates/about.html:10
 msgid ""
@@ -49,18 +53,18 @@ msgid ""
 "                                            recentemente comercializámos "
 "produtos alimentares e bebidas."
 msgstr ""
-"<b class=\"about-text-bold\">Margem Frontal</b> is a portuguese company that "
-"provides services to individuals and companies in terms of purchasing (real\n"
-"                                            estate investment), property "
-"sales, remodeling\n"
-"                                            and construction of houses and "
-"buildings. We are also specialists\n"
-"                                            in the placement of alarms, "
-"video surveillance cameras,\n"
-"                                            doors, etc, both at a personal "
-"and business level. More\n"
-"                                            recently we have marketed food "
-"products and beverages."
+"<b class=\"about-text-bold\"> Margen frontal </b> es una empresa nacional que "
+"brinda servicios a particulares y empresas en términos de compra (inversión\n"
+"                                            bienes inmuebles), venta de "
+"bienes inmuebles, obras de remodelación\n"
+"                                            y construcción de casas y "
+"edificios. Seguimos siendo expertos\n"
+"                                            en la colocación de alarmas, "
+"cámaras de video vigilancia,\n"
+"                                            puertas, etc., tanto a nivel "
+"personal como comercial. Más\n"
+"                                            recientemente comercializamos "
+"productos alimenticios y bebidas."
 
 #: templates/about.html:16
 msgid ""
@@ -81,24 +85,24 @@ msgid ""
 "para os nossos clientes."
 msgstr ""
 " \n"
-"                                            With <b class=\"about-text-bold"
-"\">over 20 years of experience</b> working in Portugal and\n"
-"                                            in some European, African and "
-"American countries, such as\n"
-"                                            France, Spain, Urugay, England, "
-"Peru, Gambia, Senegal,\n"
-"                                            Guinea, Angola, Ivory Coast, "
-"Mozambique, Cape-verde, among others.<br>\n"
-"                                            We look forward to work with the "
-"intention of obtaining partnerships\n"
-"                                            with European products and "
-"manufacturers to achieve the\n"
-"                                            best quality/price ratio for our "
-"customers."
+"                                            Con <b class=\"about-text-bold\"> "
+"más de 20 años de experiencia </b> trabajando en Portugal y\n"
+"                                            en algunos países europeos, "
+"africanos y americanos, como\n"
+"                                            Francia, España, Uruguay, "
+"Inglaterra, Perú, Gambia, Senegal,\n"
+"                                            Guinea, Angola, Costa de Marfil, "
+"Mozambique, Cabo Verde, entre otros. <br>\n"
+"                                            Intentamos trabajar para lograr "
+"asociaciones\n"
+"                                            con productos y fabricantes "
+"europeos para lograr\n"
+"                                            la mejor relación calidad / "
+"precio para nuestros clientes."
 
 #: templates/about.html:32
 msgid "A nossa Missão"
-msgstr "Our Mission"
+msgstr "Nuestra Mission"
 
 #: templates/about.html:33
 msgid ""
@@ -109,18 +113,20 @@ msgid ""
 "                        dando qualidade e preços nos nossos serviços "
 "prestados."
 msgstr ""
-"We work daily to provide a counseling service to help families\n"
-"                        and companies, both nationally and internationally, "
-"to benefit from the best conditions,\n"
-"                        providing quality and prices in our services."
+"Trabajamos diariamente para proporcionar un servicio de asesoramiento para "
+"ayudar a las familias.\n"
+"                        y empresas, tanto nacionales como internacionales, "
+"para beneficiarse de las mejores condiciones,\n"
+"                        dando calidad y precios en nuestros servicios "
+"prestados."
 
 #: templates/contact_form.html:5
 msgid "CONTACTE-NOS"
-msgstr "Contact us"
+msgstr "CONTÁCTENOS"
 
 #: templates/contact_form.html:12
 msgid "Nome"
-msgstr "Name"
+msgstr "Nombre"
 
 #: templates/contact_form.html:18
 msgid "Email"
@@ -128,29 +134,29 @@ msgstr "Email"
 
 #: templates/contact_form.html:24
 msgid "Pais"
-msgstr "Country"
+msgstr "Pais"
 
 #: templates/contact_form.html:28
 msgid "Assunto"
-msgstr "Subject"
+msgstr "Sujeto"
 
 #: templates/contact_form.html:30
 msgid "Mediação de Obras"
-msgstr "Construction Mediation"
+msgstr "Mediación de obras"
 
 #: templates/contact_form.html:31 templates/services.html:17
 #: templates/services.html:51
 msgid "Alarmes e Portas"
-msgstr "Door Alarms"
+msgstr "Alarma y Puertas"
 
 #: templates/contact_form.html:32 templates/services.html:22
 #: templates/services.html:57
 msgid "Produtos, Alimentos e Bebidas"
-msgstr "Products, Food and Beverage"
+msgstr "Productos, Alimentos y Bebidas"
 
 #: templates/contact_form.html:33 templates/services.html:63
 msgid "Investimento Imobiliário"
-msgstr "Real Estate Investment"
+msgstr "Inversión Inmobiliaria"
 
 #: templates/contact_form.html:34 templates/services.html:35
 #: templates/services.html:69
@@ -159,27 +165,27 @@ msgstr "Trading"
 
 #: templates/contact_form.html:35
 msgid "Outros"
-msgstr "Other"
+msgstr "Otros"
 
 #: templates/contact_form.html:41
 msgid "Mensagem"
-msgstr "Message"
+msgstr "Mensaje"
 
 #: templates/contact_form.html:50
 msgid ""
 "Aceito fornecer os meus dados à Margem Frontal em ordem a receber "
 "informações e possíveis oportunidades"
 msgstr ""
-"I agree to provide my data to Margem Frontal in order to receive information "
-"and possible job offers"
+"Acepto proporcionar mis datos al Margen Frontal para recibir información y "
+"posibles oportunidades"
 
 #: templates/contact_form.html:56
 msgid "Enviar"
-msgstr "Send"
+msgstr "Enviar"
 
 #: templates/contacts.html:7
 msgid "CONTACTOS"
-msgstr "CONTACTS"
+msgstr "CONTACTOS"
 
 #: templates/contacts.html:16
 msgid "PORTUGAL"
@@ -191,7 +197,7 @@ msgstr "Porto"
 
 #: templates/contacts.html:19
 msgid "ESPANHA"
-msgstr "SPAIN"
+msgstr "España"
 
 #: templates/contacts.html:19
 msgid "Vigo"
@@ -199,11 +205,11 @@ msgstr "Vigo"
 
 #: templates/contacts.html:22
 msgid "FRANÇA"
-msgstr "FRANCE"
+msgstr "FRANCIA"
 
 #: templates/contacts.html:22
 msgid "Paris - Mónaco"
-msgstr "Paris - Monaco"
+msgstr "París - Mónaco"
 
 #: templates/content_service1.html:4
 msgid ""
@@ -213,11 +219,11 @@ msgid ""
 "                                                ou Ampliação do seu\n"
 "                                                imóvel."
 msgstr ""
-"We always guarantee the best\n"
-"                                                relation in the "
-"Construction, Remodelling\n"
-"                                                or Expansion of your\n"
-"                                                property."
+"Siempre garantizamos lo mejor\n"
+"                                                relación en Construcción, "
+"Remodelación\n"
+"                                                o expansión de su\n"
+"                                                inamovible."
 
 #: templates/content_service1.html:7
 msgid ""
@@ -230,14 +236,13 @@ msgid ""
 "preocupações."
 msgstr ""
 "\n"
-"                                                We have Constructive "
-"solutions \n"
-"                                                that go from the traditional "
-"to\n"
-"                                                the most advanced solutions, "
-"at\n"
-"                                                the best price and without "
-"worries."
+"                                                Tenemos soluciones "
+"constructivas.\n"
+"                                                desde tradicional hasta\n"
+"                                                soluciones más avanzadas "
+"por\n"
+"                                                El mejor precio y sin "
+"preocupaciones."
 
 #: templates/content_service2.html:4
 msgid ""
@@ -247,11 +252,11 @@ msgid ""
 "                                                                e para a sua "
 "empresa."
 msgstr ""
-"Protects what really matters,\n"
-"                                                                to you, your "
-"family\n"
-"                                                                and your "
-"business."
+"Protege lo que realmente importa\n"
+"                                                                para ti, "
+"para tu familia\n"
+"                                                                y para su "
+"empresa."
 
 #: templates/content_service2.html:6
 msgid ""
@@ -264,12 +269,12 @@ msgid ""
 "no seu local de trabalho."
 msgstr ""
 "\n"
-"                                                                We know that "
-"thieves control\n"
-"                                                                your "
-"movements in\n"
-"                                                                your home or "
-"workplace."
+"                                                                Sabemos que "
+"los ladrones controlan\n"
+"                                                                tus "
+"movimientos en\n"
+"                                                                su hogar o "
+"lugar de trabajo."
 
 #: templates/content_service2.html:9
 msgid ""
@@ -282,12 +287,12 @@ msgid ""
 "caixilharias de alumínio"
 msgstr ""
 "\n"
-"                                                                Our security "
-"services\n"
-"                                                                include "
-"alarms, doors,\n"
-"                                                                CCTV and "
-"aluminum window frames"
+"                                                                Nuestros "
+"servicios de seguridad\n"
+"                                                                incluyen "
+"alarmas, puertas,\n"
+"                                                                CCTV y "
+"marcos de ventanas de aluminio"
 
 #: templates/content_service3.html:4
 msgid ""
@@ -298,172 +303,172 @@ msgid ""
 "uma elevada\n"
 "                                                            qualidade."
 msgstr ""
-"Discover the wide range of products\n"
-"                                                            we have at your "
-"disposal\n"
-"                                                            with "
-"guaranteed high\n"
-"                                                            quality."
+"Descubre la amplia gama de productos.\n"
+"                                                            que tenemos a su "
+"disposición\n"
+"                                                            con alta "
+"garantizada\n"
+"                                                            calidad."
 
 #: templates/content_service3.html:10
 msgid "Produtos Biológicos"
-msgstr "Biological Products"
+msgstr "Productos biológicos"
 
 #: templates/content_service3.html:14
 msgid "Produtos lácteos"
-msgstr "Dairy products"
+msgstr "Productos lácteos"
 
 #: templates/content_service3.html:15
 msgid "Presunto"
-msgstr "Ham"
+msgstr "Jamon"
 
 #: templates/content_service3.html:16
 msgid "Molhos e Vinagres"
-msgstr "Sauces and Vinegars"
+msgstr "Salsas y Vinagres"
 
 #: templates/content_service3.html:17
 msgid "Mel"
-msgstr "Honey"
+msgstr "Miel"
 
 #: templates/content_service3.html:18
 msgid "Legumes e Vegetais em conserva"
-msgstr "Preserved Vegetables and Vegetables"
+msgstr "Verduras en escabeche y verduras"
 
 #: templates/content_service3.html:19
 msgid "Frutas"
-msgstr "Fruits"
+msgstr "Fruta"
 
 #: templates/content_service3.html:20
 msgid "Legumes"
-msgstr "Vegetables"
+msgstr "Verduras"
 
 #: templates/content_service3.html:21
 msgid "Fatiados"
-msgstr "Sliced"
+msgstr "En rodajas"
 
 #: templates/content_service3.html:22
 msgid "Conservas de Peixe"
-msgstr "Canned Fish"
+msgstr "Pescado Enlatado"
 
 #: templates/content_service3.html:23
 msgid "Compotas em tubo"
-msgstr "Tube jams"
+msgstr "Mermeladas en tubo"
 
 #: templates/content_service3.html:24
 msgid "Bacalhau congelado"
-msgstr "Frozen codfish"
+msgstr "Bacalao Congelado"
 
 #: templates/content_service3.html:25
 msgid "Bacalhau gourmet"
-msgstr "Gourmet codfish"
+msgstr "Bacalao Gourmet"
 
 #: templates/content_service3.html:26
 msgid "Bacalhau seco e salgado"
-msgstr "Dry and salted codfish"
+msgstr "Bacalao seco y salado"
 
 #: templates/content_service3.html:27
 msgid "Bacalhau semi seco"
-msgstr "Semi dry codfish"
+msgstr "Bacalao Secado"
 
 #: templates/content_service3.html:28
 msgid "Outros peixes"
-msgstr "Other fish"
+msgstr "Otros peces"
 
 #: templates/content_service3.html:29
 msgid "Azeitonas"
-msgstr "Olives"
+msgstr "Aceitunas"
 
 #: templates/content_service3.html:30
 msgid "Azeite"
-msgstr "Olive oil"
+msgstr "Aceite de oliva"
 
 #: templates/content_service3.html:31
 msgid "Sabão e Perfumaria"
-msgstr "Soap and Perfurmery"
+msgstr "Jabón y Perfumería"
 
 #: templates/content_service3.html:32
 msgid "Refeições pré-cozinhadas"
-msgstr "Pre-cooked meals"
+msgstr "Comidas precocinadas"
 
 #: templates/content_service3.html:36
 msgid "Bebidas"
-msgstr "Beverages"
+msgstr "Bebidas"
 
 #: templates/content_service3.html:41
 msgid "Refrigerantes"
-msgstr "Soft drinks"
+msgstr "Refrescos"
 
 #: templates/content_service3.html:42
 msgid "Vinho regional"
-msgstr "Regional wine"
+msgstr "Vino regional"
 
 #: templates/content_service3.html:43
 msgid "Vinho Verde"
-msgstr "Green wine"
+msgstr "Vino verde"
 
 #: templates/content_service3.html:44
 msgid "Vinho do Tejo"
-msgstr "Tagus wine"
+msgstr "Vino Tajo"
 
 #: templates/content_service3.html:45
 msgid "Vinho do Porto"
-msgstr "Port wine"
+msgstr "Vino de Porto"
 
 #: templates/content_service3.html:46
 msgid "Vinho do Douro"
-msgstr "Douro wine"
+msgstr "Vino del Duero"
 
 #: templates/content_service3.html:47
 msgid "Vinho do Alentejo"
-msgstr "Alentejo wine"
+msgstr "Vino Alentejo"
 
 #: templates/content_service3.html:48
 msgid "Cerveja Artesanal"
-msgstr "Craft beer"
+msgstr "Cerveza artesanal"
 
 #: templates/content_service3.html:49
 msgid "Água mineral"
-msgstr "Mineral water"
+msgstr "Agua mineral"
 
 #: templates/content_service3.html:53
 msgid "Peças para Aeronaves"
-msgstr "Aircraft parts"
+msgstr "Partes de aviones"
 
 #: templates/content_service3.html:57
 msgid "Aviões comerciais"
-msgstr "Commercial aircraft"
+msgstr "Aviones de pasajeros"
 
 #: templates/content_service3.html:58
 msgid "Aviões militares"
-msgstr "Military aircraft"
+msgstr "Aviones militares"
 
 #: templates/content_service3.html:59
 msgid "Helicópteros comerciais"
-msgstr "Commercial helicopters"
+msgstr "Helicópteros comerciales"
 
 #: templates/content_service3.html:60
 msgid "Aeronave LA-8"
-msgstr "LA-8 aircraft"
+msgstr "Avión LA-8"
 
 #: templates/content_service3.html:61
 msgid "Aeronave Boney"
-msgstr "Boney aircraft"
+msgstr "Avión Boney"
 
 #: templates/content_service3.html:62
 msgid "Aeronave Sila 450C"
-msgstr "Sila 450C aircraft"
+msgstr "Avión Sila 450C"
 
 #: templates/content_service3.html:63
 msgid "Aeronave Sila 750MT"
-msgstr "Sila 750MT aircraft"
+msgstr "Avión Sila 750MT"
 
 #: templates/content_service3.html:64
 msgid "Aeronave Sila 750"
-msgstr "Sila 750 aircraft"
+msgstr "Avión Sila 750"
 
 #: templates/content_service3.html:65
 msgid "Manutenção de aeronaves"
-msgstr "Aircraft maintenance"
+msgstr "Mantenimiento de aeronaves"
 
 #: templates/content_service4.html:4
 msgid ""
@@ -471,9 +476,9 @@ msgid ""
 "                                                            longo de várias "
 "áreas de serviço."
 msgstr ""
-"Real estate investments over\n"
-"                                                            several service "
-"areas."
+"Inversiones inmobiliarias\n"
+"                                                            en múltiples "
+"áreas de servicio."
 
 #: templates/content_service4.html:5
 msgid ""
@@ -488,14 +493,14 @@ msgid ""
 "                                                            áreas."
 msgstr ""
 "\n"
-"                                                            <b class="
-"\"services-text-bold\">Investments</b> and <b class=\"services-text-bold"
-"\">sales</b> in\n"
-"                                                            the domain of <b "
-"class=\"services-text-bold\">Health, Geriatrics, Renewable\n"
-"                                                            Energies, "
-"Hotels, Winery </b> and other\n"
-"                                                            areas."
+"                                                            <b "
+"class=\"services-text-bold\"> Inversiones </b> y <b class=\"services-text-"
+"bold\"> ventas </b> en\n"
+"                                                            <b "
+"class=\"services-text-bold\"> Salud, geriatría, energía\n"
+"                                                            Renovables, "
+"Hospitalidad, Bodega </b> y otros\n"
+"                                                            zonas."
 
 #: templates/content_service4.html:9
 msgid ""
@@ -507,10 +512,10 @@ msgid ""
 "                                                            "
 msgstr ""
 "\n"
-"                                                            Property "
-"Investments\n"
-"                                                            to <b class="
-"\"services-text-bold\">international buyers</b>.\n"
+"                                                            Inversiones "
+"inmobiliarias\n"
+"                                                            para <b "
+"class=\"services-text-bold\"> compradores internacionales </b>.\n"
 "                                                            "
 
 #: templates/content_service5.html:4
@@ -529,99 +534,103 @@ msgid ""
 "                                                            altamente "
 "competitiva."
 msgstr ""
-"Exports and imports, we bring\n"
-"                                                            you a wide "
-"range\n"
-"                                                            of high quality "
-"products,\n"
-"                                                            facilitating "
-"access\n"
-"                                                            to international "
-"products with\n"
-"                                                            a highly "
-"competitive price/quality\n"
-"                                                            ratio. "
+"Exportaciones e importaciones, tomamos\n"
+"                                                            usted una amplia "
+"gama\n"
+"                                                            productos de "
+"alta calidad,\n"
+"                                                            facilitando el "
+"acceso a\n"
+"                                                            productos "
+"internacionales con\n"
+"                                                            una relación "
+"calidad / precio,\n"
+"                                                            Muy competitivo."
 
 #: templates/footer.html:7
 msgid "Todos os direitos reservados"
-msgstr "All rights reserved."
+msgstr "Todos los derechos reservados"
 
 #: templates/navbar.html:18
 msgid "Sobre nós"
-msgstr "About us"
+msgstr "Sobre nosotros"
 
 #: templates/navbar.html:21
 msgid "Serviços"
-msgstr "Services"
+msgstr "Servicios"
 
 #: templates/navbar.html:24
 msgid "Portefólio"
-msgstr "Portfolio"
+msgstr "Portafolio"
 
 #: templates/navbar.html:27
 msgid "Contactos"
-msgstr "Contacts"
+msgstr "Contactos"
 
-#: templates/overview.html:33
+#: templates/overview.html:34
 msgid "Argentina"
 msgstr "Argentina"
 
-#: templates/overview.html:39
+#: templates/overview.html:40
 msgid "Angola"
 msgstr "Angola"
 
-#: templates/overview.html:45
+#: templates/overview.html:46
 msgid "Brasil"
-msgstr "Brazil"
+msgstr "Brasil"
 
-#: templates/overview.html:51
+#: templates/overview.html:52
 msgid "Costa de Marfim"
-msgstr "Ivory Coast"
+msgstr "Costa de marfil"
 
-#: templates/overview.html:57
+#: templates/overview.html:58
 msgid "Espanha"
-msgstr "Spain"
+msgstr "España"
 
-#: templates/overview.html:63
+#: templates/overview.html:64
 msgid "França"
-msgstr "France"
+msgstr "Francia"
 
-#: templates/overview.html:69
+#: templates/overview.html:70
 msgid "Reino Unido"
-msgstr "United Kingdom"
+msgstr "Reino Unido"
 
-#: templates/overview.html:75
+#: templates/overview.html:76
 msgid "Guiné"
 msgstr "Guinea"
 
-#: templates/overview.html:81
+#: templates/overview.html:82
 msgid "Moçambique"
 msgstr "Mozambique"
 
-#: templates/overview.html:87
+#: templates/overview.html:88
 msgid "Peru"
 msgstr "Peru"
 
-#: templates/overview.html:93
+#: templates/overview.html:94
 msgid "Portugal"
 msgstr "Portugal"
 
-#: templates/overview.html:99
+#: templates/overview.html:100
 msgid "Senegal"
 msgstr "Senegal"
 
+#: templates/overview.html:106
+msgid "Uruguai"
+msgstr "Uruguay"
+
 #: templates/portfolio.html:5
 msgid "PORTEFÓLIO"
-msgstr "PORTFOLIO"
+msgstr "PORTAFOLIO"
 
 #: templates/services.html:5
 msgid "SERVIÇOS"
-msgstr "SERVICES"
+msgstr "SERVICIOS"
 
 #: templates/services.html:12 templates/services.html:45
 msgid "Mediação Imobiliária"
-msgstr "Construction Mediation"
+msgstr "Bienes inmuebles"
 
 #: templates/services.html:30
 msgid "Investimento Mobiliário"
-msgstr "Real Estate Investment"
+msgstr "Inversión de valores"

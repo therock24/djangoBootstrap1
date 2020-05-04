@@ -13,34 +13,36 @@
                 <i class="fas fa-bars navbar-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
+                <ul class="nav navbar-nav ml-auto navbar-right text-center">
                     <li class="nav-item mr-4">
                         <a class="nav-link navbar-text" href="{% url 'index' %}#about">{%trans "Sobre nós"%}</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item pr-4">
                         <a class="nav-link navbar-text" href="{% url 'index' %}#services">{%trans "Serviços"%}</a>
                     </li>
-                    <li class="nav-item mr-4">
+                    <li class="nav-item pr-4">
                         <a class="nav-link navbar-text" href="{% url 'index' %}#portfolio">{%trans "Portefólio"%}</a>
                     </li>
-                    <li class="nav-item pr-5">
+                    <li class="nav-item pr-4">
                         <a class="nav-link navbar-text" href="{% url 'index' %}#contacts">{%trans "Contactos"%}</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="mx-auto pr-4">
                         <form name="lang" action="{% url 'set_language' %}" method="post">{% csrf_token %}
-                        <input name="next" type="hidden" value="{{ redirect_to }}" />
+                        <input name="next" type="hidden" />
                         <input name="language" type="hidden"/>
                         {% get_current_language as LANGUAGE_CODE %}
                         {% get_language_info for LANGUAGE_CODE as lang %}
                         {% get_available_languages as LANGUAGES %}
                         {% get_language_info_list for LANGUAGES as languages %}
+                        <div class="flex-list">
                         <ul class="list-inline">
                         {% for language in languages %}
                             <li class="list-inline-item navbar-lang-item">
                                 <a class="nav-link text-white" href="#" onclick="document.lang.language.value='{{ language.code}}'; document.lang.submit();">{{language.code|upper}}</a>
                             </li>
                         {% endfor %}
-                        </ul>  
+                        </ul> 
+                        </div> 
                     </li>
                 
                 </ul>

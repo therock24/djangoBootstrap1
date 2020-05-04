@@ -3,47 +3,48 @@
 
  <div id="portfolio" class="container-fluid pt-3 pb-2">
         <h2 class="text-center pb-5">{%trans "PORTEFÓLIO"%}</h2>
-        <!--<div id="portfolio_overlay" class="map-overlay">
-                <i id="close_map_overlay" class="map-overlay-img fa fa-window-close p-4 position-absolute top-0 right-0"></i>
-                <p id="map_overlay_text" class="map-overlay-text text-center pt-4">Portugal</p>
-                <img id="map_overlay_img" class="map-overlay-img d-block img-fluid px-4 pt-2" src="{% static 'img/countries/pt.jpg' %}" alt="Argentina">
-            </div>-->
-           <div class="row">
+        <div class"container" style="position: relative;">
+            <div class="row">
                 <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/1.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/1.jpg' %}" class="img-fluid" id="portfolio_img1" onclick="portfolio_overlay_open(1);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/2.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/2.jpg' %}" class="img-fluid" id="portfolio_img2" onclick="portfolio_overlay_open(2);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/3.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/3.jpg' %}" class="img-fluid" id="portfolio_img3" onclick="portfolio_overlay_open(3);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/4.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/4.jpg' %}" class="img-fluid" id="portfolio_img4" onclick="portfolio_overlay_open(4);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/5.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/5.jpg' %}" class="img-fluid" id="portfolio_img5" onclick="portfolio_overlay_open(5);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/6.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/6.jpg' %}" class="img-fluid" id="portfolio_img6" onclick="portfolio_overlay_open(6);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/7.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/7.jpg' %}" class="img-fluid" id="portfolio_img7" onclick="portfolio_overlay_open(7);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/8.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/8.jpg' %}" class="img-fluid" id="portfolio_img8" onclick="portfolio_overlay_open(8);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/9.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/9.jpg' %}" class="img-fluid" id="portfolio_img9" onclick="portfolio_overlay_open(9);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/10.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/10.jpg' %}" class="img-fluid" id="portfolio_img10" onclick="portfolio_overlay_open(10);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/11.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/11.jpg' %}" class="img-fluid" id="portfolio_img11" onclick="portfolio_overlay_open(11);">
                 </div>
                  <div class="col-4 col-sm-4 col-md-3 col-lg-3 pb-4">
-                    <img src="{% static 'img/grid/12.jpg' %}" class="img-fluid">
+                    <img src="{% static 'img/grid/12.jpg' %}" class="img-fluid" id="portfolio_img12" onclick="portfolio_overlay_open(12);">
                 </div>
             </div>
+            <div id="portfolio_overlay" class="portfolio-overlay mx-auto mt-5 justify-content-center">
+                <p><i id="close_portfolio_overlay" class="portfolio-overlay-img fa fa-window-close p-4 position-absolute top-0 right-0"></i></p>
+                <img id="portfolio_overlay_img" class="portfolio-overlay-img d-block img-fluid  pt-2 mx-auto" src="{% static 'img/countries/pt.jpg' %}" alt="Argentina">
+            </div>
         </div>
+</div>

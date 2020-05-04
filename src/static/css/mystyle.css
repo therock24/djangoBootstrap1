@@ -75,7 +75,6 @@ h2 {
 
 /* Text */
 
-
 .text-21pt {
     font-family: MontSerrat;
     font-size: 12px;
@@ -99,6 +98,7 @@ h2 {
 }
 
 /* Map */
+
 
 .map-overlay {
     position: absolute;
@@ -161,6 +161,7 @@ h2 {
     color: #143867;
     font-family: MontSerrat;
     font-size: 14px;
+    /*word-break: break-all;*/ /* horrible */
 }
 
 .services-text-bold {
@@ -169,6 +170,31 @@ h2 {
     font-size: 14px;
 }
 
+/* flex box for language list */
+.flex-list {
+    position: relative;
+    overflow: hidden;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+.flex-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+    
+}
+
+.flex-list li {
+    flex-grow: 1;
+    flex-basis: auto;
+    text-align: center;
+    border-left: 1px solid white;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+}
 
 
 .services-button {
@@ -212,14 +238,34 @@ h2 {
  }
 
  /* Portfolio */
+
  .portfolio-overlay {
     position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    bottom:0;
     right:0;
     opacity: 1;
     background-color: #C20000;
-    width:60%;
+    width:75%;
     height:75%;
-    z-index: 1;
+    max-height: 85%;
+    
+}
+
+.portfolio-overlay-text {
+    opacity: 1;
+    font-family: MontSerrat-Bold;
+    font-size: 16px;
+    color:white;
+}
+
+.portfolio-overlay-img {
+    opacity: 1;
+    max-width: 90%;
+    max-height: 90%;
+    color:white;
 }
 
  /* Oportunities */
