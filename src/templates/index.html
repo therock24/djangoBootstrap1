@@ -19,8 +19,7 @@
     <script src="{% static 'js/popper.min.js' %}"></script>
     <script src="{% static 'js/bootstrap.js' %}"></script>
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
-
-
+    
     <script src="{% static 'jmap/jquery.vmap.js' %}"></script>
     <script src="{% static 'jmap/maps/jquery.vmap.world.js' %}"></script>
     <script src="{% static 'jmap/js/jquery.vmap.sampledata.js' %}"></script>
@@ -94,20 +93,28 @@
 
     <!-- NAV BAR -->
     {% include "navbar.html" %}
+
+    {% ifequal alert "success" %}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{alertmsg}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endifequal %}
+        {% ifequal alert "fail" %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{alertmsg}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+    {% endifequal %}
          
     <!-- WORLD MAP -->
     <!-- Regions https://github.com/10bestdesign/jqvmap/blob/master/REGIONS.md-->
     
     {% include "overview.html" %}
-    <!-- Button trigger modal-->
-
-<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPoll">
-  Launch demo modal
-</button>--> 
-
-
-    
-    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalPoll">Launch modal</button>-->
 
     <!-- SOBRE NOS (About us)-->
     {% include 'about.html' %}
@@ -132,7 +139,7 @@
         Entre em contacto connosco, não perca a oportunidade.<br>
         </div>
         <div class="col text-center">
-            <a href="oportunidades/" class="btn btn-primary oportunities-button" >Oportunidades</a>
+            <a href="{% url 'oportunidades' %}" class="btn btn-primary oportunities-button" >Oportunidades</a>
         </div>
     </div>
     {% endif %}

@@ -160,7 +160,11 @@ h2 {
     color: #143867;
     font-family: MontSerrat;
     font-size: 14px;
-    /*word-break: break-all;*/ /* horrible */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
 }
 
 .services-text-bold {

@@ -1,48 +1,74 @@
 from django.shortcuts import render
-from margemfrontal.settings import EMAIL_HOST_USER
-from . import forms
+from margemfrontal.settings import EMAIL_HOST_USER, RECIPIENT_EMAIL
+from .forms import ContactForm, OportunitiesForm
 from django.core.mail import send_mail
+import logging
+
 
 
 def index(request):
-    sub = forms.Contact()
+ 
+    logger = logging.getLogger(__name__)
+    
     if request.method == 'POST':
-        
-        sub = forms.Contact(request.POST)
-        print(request.POST)
-        subject = 'Nova mensagem enviada através do website '
-        message = 'Nova mensagem recebida:' + '\n'\
-            'Nome: ' + sub.Name + '\n'\
-            'E-mail: ' + sub.Email + '\n'\
-            'Pais: ' + sub.Country + '\n'\
-            'Assunto: ' + sub.Subject + '\n' \
-            'Mensagem:' + sub.Message + '\n'
+        logger.error('Request POST!')
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data.get("Name")
+            email = form.cleaned_data.get("Email")
+            country = form.cleaned_data.get("Country")
+            matter = form.cleaned_data.get("Subject")
+            message = form.cleaned_data.get("Message")
 
-        recepient = "margemfrontalwebsite@gmail.com"
-        send_mail(subject, 
-            message, EMAIL_HOST_USER, [recepient], fail_silently = False)
-        return render(request, 'index.html', {'form' : sub, 'alert': 'success','alertmsg' : 'Pedido enviado com sucesso!'})
+            subject = 'Nova mensagem enviada através do website '
+            message = 'Nova mensagem recebida:' + '\n'\
+                'Nome: ' + name + '\n'\
+                'E-mail: ' + email + '\n'\
+                'Pais: ' + country + '\n'\
+                'Assunto: ' + matter + '\n' \
+                'Mensagem:' + message + '\n'
 
-    return render(request, 'index.html', {'form' : sub})
+            send_mail(subject, 
+                message, EMAIL_HOST_USER, [RECIPIENT_EMAIL], fail_silently = False)
+            return render(request, 'index.html', {'form' : form, 'alert': 'success','alertmsg' : 'Pedido enviado com sucesso!'})
+        else:
+            return render(request, 'index.html', {'form' : form,'alert': 'fail','alertmsg' : 'Formulário inválido! Verifique os dados do formulário!'})
+    else:
+        form = ContactForm()
+        logger.error('Request not POST!')
+        return render(request, 'index.html', {'form' : form})
 
 def oportunidades(request):
-    sub = forms.Oportunities()
-    if request.method == 'POST':
-        
-        sub = forms.Oportunities(request.POST)
-        print(request.POST)
-        subject = 'Nova candidatura enviada através do website '
-        message = 'Nova candidatura recebida:' + '\n'\
-            'Nome: ' + sub.Name + '\n'\
-            'E-mail: ' + sub.Email + '\n'\
-            'Distrito onde vive: ' + sub.DistrictHome + '\n'\
-            'Distrito onde pretende colaborar: ' + sub.DistrictWork + '\n'\
-            'Preferência: ' + sub.Preference + '\n'\
-            'Serviços onde pretende colaborar: ' + sub.Service + '\n'\
-            'Mensagem:' + sub.Message + '\n'
-        recepient = "margemfrontalwebsite@gmail.com"
-        send_mail(subject, 
-            message, EMAIL_HOST_USER, [recepient], fail_silently = False)
-        return render(request, 'oportunidades.html', {'form' : sub,'alert': 'success','alertmsg' : 'Pedido enviado com sucesso!'})
 
-    return render(request, 'oportunidades.html',{'form' : sub})
+    logger = logging.getLogger(__name__)
+    
+    if request.method == 'POST':
+        logger.error('Request POST!')
+        form = OportunitiesForm(request.POST)
+        if form.is_valid():
+            name = form.cleaned_data.get("Name")
+            email = form.cleaned_data.get("Email")
+            districtHome = form.cleaned_data.get("DistrictHome")
+            districtWork = form.cleaned_data.get("DistrictWork")
+            preference = form.cleaned_data.get("Preference")
+            service = form.cleaned_data.get("Service")
+            message = form.cleaned_data.get("Message")
+
+            subject = 'Nova candidatura enviada através do website '
+            message = 'Nova candidatura recebida:' + '\n'\
+                'Nome: ' + name+ '\n'\
+                'E-mail: ' + email + '\n'\
+                'Distrito onde vive: ' + districtHome + '\n'\
+                'Distrito onde pretende colaborar: ' + districtWork + '\n'\
+                'Preferência: ' + preference + '\n'\
+                'Serviços onde pretende colaborar: ' + service + '\n'\
+                'Mensagem:' + message + '\n'
+            send_mail(subject, 
+                message, EMAIL_HOST_USER, [RECIPIENT_EMAIL], fail_silently = False)
+            return render(request, 'oportunidades.html', {'form' : form,'alert': 'success','alertmsg' : 'Pedido enviado com sucesso!'})
+        else:
+            return render(request, 'oportunidades.html', {'form' : form,'alert': 'fail','alertmsg' : 'Formulário inválido! Verifique os dados do formulário!'})
+    else:
+        form = OportunitiesForm()
+        logger.error('Request not POST!')
+        return render(request, 'oportunidades.html',{'form' : form})

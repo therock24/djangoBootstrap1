@@ -1,59 +1,58 @@
 {% load static %}
 {% load i18n %}
 
-    <div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
-        <h2 class="text-center pb-5">{%trans "CONTACTE-NOS"%}</h2>
-        
-        <form action="." method="POST" class="needs-validation col-lg-6 offset-lg-3" novalidate>
-             <!-- Very Important csrf Token -->
-            {% csrf_token %}
-            <div class="form-row justify-content-center">
-                <div class="col-10 col-md-8 mb-3">
-                    <label for="{{ form.Name.id_for_label }}" class="contact-form-text" >{%trans "Nome" %}</label>
-                    <input type="text" class="form-control contact-form-field" id="{{ form.Name.id_for_label }}" name="{{ form.Name.html_name }}" required>
+<div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
+    <h2 class="text-center pb-5">{%trans "CONTACTE-NOS"%}</h2>
+    <form method="post" action="{% url 'index' %}" class="col-lg-6 offset-lg-3">
+        <!-- Very Important csrf Token -->
+        {% csrf_token %}
+        <div class="form-row justify-content-center">
+            <div class="col-10 col-md-8 mb-3">
+                <label for="{{ form.Name.id_for_label }}" class="contact-form-text" >{%trans "Nome" %}</label>
+                <input type="text" class="form-control contact-form-field" id="{{ form.Name.id_for_label }}" name="{{ form.Name.html_name }}" maxlength="{{ form.Name.field.max_length }}" required>
+            </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="col-10 col-md-8 mb-3">
+                <label for="{{ form.Email.id_for_label }}" class="contact-form-text">{%trans "Email" %}</label>
+                <input type="text" class="form-control contact-form-field" id="{{ form.Email.id_for_label }}" name="{{ form.Email.html_name }}" maxlength="{{ form.Email.field.max_length }}" required>
+            </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="col-10 col-md-4 mb-3">
+                <label for="{{ form.Country.id_for_label }}" class="contact-form-text">{%trans "Pais" %}</label>
+                <input type="text" class="form-control contact-form-field" id="{{ form.Country.id_for_label }}" name="{{ form.Country.html_name }}" maxlength="{{ form.Country.field.max_length }}" required>
+            </div>
+            <div class="col-10 col-md-4 mb-3">
+                <label for="{{ form.Subject.id_for_label }}" class="contact-form-text">{%trans "Assunto" %}</label>                      
+                <select class="form-control" id="{{ form.Subject.id_for_label }}" name="{{ form.Subject.html_name }}" maxlength="{{ form.Subject.field.max_length }}">
+                    <option selected="selected">{%trans "Mediação de Obras" %}</option>
+                    <option>{%trans "Alarmes e Portas" %}</option>
+                    <option>{%trans "Produtos, Alimentos e Bebidas" %}</option>
+                    <option>{%trans "Investimento Imobiliário" %}</option>
+                    <option>{%trans "Trading" %}</option>
+                    <option>{%trans "Outros" %}</option>          
+                </select>
+            </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="col-10 col-md-8 mb-3">
+                <label for="{{ form.Message.id_for_label }}" class="contact-form-text">{%trans "Mensagem" %}</label>
+                <textarea rows="5" class="form-control contact-form-field"  id="{{ form.Message.id_for_label }}" name="{{ form.Message.html_name }}" maxlength="{{ form.Message.field.max_length }}" required></textarea>
+            </div>
+        </div>
+        <div class="form-row justify-content-center">
+            <div class="col-10 col-md-8 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                    <label class="form-check-label contact-form-text" for="defaultCheck1">
+                        {%trans "Aceito fornecer os meus dados à Margem Frontal em ordem a receber informações e possíveis oportunidades" %}
+                    </label>
                 </div>
             </div>
-            <div class="form-row justify-content-center">
-                <div class="col-10 col-md-8 mb-3">
-                    <label for="{{ form.Email.id_for_label }}" class="contact-form-text">{%trans "Email" %}</label>
-                    <input type="text" class="form-control contact-form-field" id="{{ form.Email.id_for_label }}" name="{{ form.Email.html_name }}" required>
-                </div>
-            </div>
-            <div class="form-row justify-content-center">
-                <div class="col-10 col-md-4 mb-3">
-                    <label for="{{ form.Country.id_for_label }}" class="contact-form-text">{%trans "Pais" %}</label>
-                        <input type="text" class="form-control contact-form-field" id="{{ form.Country.id_for_label }}" name="{{ form.Country.html_name }}" required>
-                </div>
-                <div class="col-10 col-md-4 mb-3">
-                    <label for="{{ form.Subject.id_for_label }}" class="contact-form-text">{%trans "Assunto" %}</label>                      
-                    <select class="form-control" id="{{ form.Subject.id_for_label }}" name="{{ form.Subject.html_name }}">
-                        <option>{%trans "Mediação de Obras" %}</option>
-                        <option>{%trans "Alarmes e Portas" %}</option>
-                        <option>{%trans "Produtos, Alimentos e Bebidas" %}</option>
-                        <option>{%trans "Investimento Imobiliário" %}</option>
-                        <option>{%trans "Trading" %}</option>
-                        <option>{%trans "Outros" %}</option>          
-                    </select>
-                </div>
-            </div>
-            <div class="form-row justify-content-center">
-                <div class="col-10 col-md-8 mb-3">
-                    <label for="{{ form.Message.id_for_label }}" class="contact-form-text">{%trans "Mensagem" %}</label>
-                    <textarea rows="5" class="form-control contact-form-field"  id="message" required></textarea>
-                </div>
-            </div>
-            <div class="form-row justify-content-center">
-                <div class="col-10 col-md-8 mb-3">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
-                        <label class="form-check-label contact-form-text" for="defaultCheck1">
-                            {%trans "Aceito fornecer os meus dados à Margem Frontal em ordem a receber informações e possíveis oportunidades" %}
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <div class="col text-center">
-                <button class="btn btn-primary contact-button" type="submit">{%trans "Enviar"%}</button>
-            </div>
-        </form>
-    </div>
+        </div>
+        <div class="col text-center">
+            <button class="btn btn-primary contact-button" type="submit">{%trans "Enviar"%}</button>
+        </div>
+    </form>
+</div>

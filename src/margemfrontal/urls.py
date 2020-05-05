@@ -22,7 +22,7 @@ from django.conf.urls import include, url
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
-    path('oportunidades/',oportunidades),
+    path('oportunidades/',oportunidades, name='oportunidades'),
     url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
 
