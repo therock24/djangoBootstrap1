@@ -7,29 +7,29 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-04 11:19+0000\n"
-"PO-Revision-Date: 2020-05-04 13:01+0100\n"
+"POT-Creation-Date: 2020-05-05 19:16+0000\n"
+"PO-Revision-Date: 2020-05-05 20:22+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: es_ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.3\n"
 
-#: margemfrontal/settings.py:139
+#: margemfrontal/settings.py:140
 msgid "Portuguese"
 msgstr "Portugués"
 
-#: margemfrontal/settings.py:140
+#: margemfrontal/settings.py:141
 msgid "English"
 msgstr "Ingles"
 
-#: margemfrontal/settings.py:141
+#: margemfrontal/settings.py:142
 msgid "French"
 msgstr "Francés"
 
-#: margemfrontal/settings.py:142
+#: margemfrontal/settings.py:143
 msgid "Spanish"
 msgstr "Espanol"
 
@@ -53,8 +53,9 @@ msgid ""
 "                                            recentemente comercializámos "
 "produtos alimentares e bebidas."
 msgstr ""
-"<b class=\"about-text-bold\"> Margen frontal </b> es una empresa nacional que "
-"brinda servicios a particulares y empresas en términos de compra (inversión\n"
+"<b class=\"about-text-bold\"> Margen frontal </b> es una empresa nacional "
+"que brinda servicios a particulares y empresas en términos de compra "
+"(inversión\n"
 "                                            bienes inmuebles), venta de "
 "bienes inmuebles, obras de remodelación\n"
 "                                            y construcción de casas y "
@@ -85,8 +86,8 @@ msgid ""
 "para os nossos clientes."
 msgstr ""
 " \n"
-"                                            Con <b class=\"about-text-bold\"> "
-"más de 20 años de experiencia </b> trabajando en Portugal y\n"
+"                                            Con <b class=\"about-text-bold"
+"\"> más de 20 años de experiencia </b> trabajando en Portugal y\n"
 "                                            en algunos países europeos, "
 "africanos y americanos, como\n"
 "                                            Francia, España, Uruguay, "
@@ -124,54 +125,54 @@ msgstr ""
 msgid "CONTACTE-NOS"
 msgstr "CONTÁCTENOS"
 
-#: templates/contact_form.html:12
+#: templates/contact_form.html:11
 msgid "Nome"
 msgstr "Nombre"
 
-#: templates/contact_form.html:18
+#: templates/contact_form.html:17
 msgid "Email"
 msgstr "Email"
 
-#: templates/contact_form.html:24
+#: templates/contact_form.html:23
 msgid "Pais"
 msgstr "Pais"
 
-#: templates/contact_form.html:28
+#: templates/contact_form.html:27
 msgid "Assunto"
 msgstr "Sujeto"
 
-#: templates/contact_form.html:30
+#: templates/contact_form.html:29
 msgid "Mediação de Obras"
 msgstr "Mediación de obras"
 
-#: templates/contact_form.html:31 templates/services.html:17
+#: templates/contact_form.html:30 templates/services.html:17
 #: templates/services.html:51
 msgid "Alarmes e Portas"
 msgstr "Alarma y Puertas"
 
-#: templates/contact_form.html:32 templates/services.html:22
+#: templates/contact_form.html:31 templates/services.html:22
 #: templates/services.html:57
 msgid "Produtos, Alimentos e Bebidas"
 msgstr "Productos, Alimentos y Bebidas"
 
-#: templates/contact_form.html:33 templates/services.html:63
+#: templates/contact_form.html:32 templates/services.html:63
 msgid "Investimento Imobiliário"
 msgstr "Inversión Inmobiliaria"
 
-#: templates/contact_form.html:34 templates/services.html:35
+#: templates/contact_form.html:33 templates/services.html:35
 #: templates/services.html:69
 msgid "Trading"
 msgstr "Trading"
 
-#: templates/contact_form.html:35
+#: templates/contact_form.html:34
 msgid "Outros"
 msgstr "Otros"
 
-#: templates/contact_form.html:41
+#: templates/contact_form.html:40
 msgid "Mensagem"
 msgstr "Mensaje"
 
-#: templates/contact_form.html:50
+#: templates/contact_form.html:49
 msgid ""
 "Aceito fornecer os meus dados à Margem Frontal em ordem a receber "
 "informações e possíveis oportunidades"
@@ -179,7 +180,7 @@ msgstr ""
 "Acepto proporcionar mis datos al Margen Frontal para recibir información y "
 "posibles oportunidades"
 
-#: templates/contact_form.html:56
+#: templates/contact_form.html:55
 msgid "Enviar"
 msgstr "Enviar"
 
@@ -493,11 +494,11 @@ msgid ""
 "                                                            áreas."
 msgstr ""
 "\n"
-"                                                            <b "
-"class=\"services-text-bold\"> Inversiones </b> y <b class=\"services-text-"
-"bold\"> ventas </b> en\n"
-"                                                            <b "
-"class=\"services-text-bold\"> Salud, geriatría, energía\n"
+"                                                            <b class="
+"\"services-text-bold\"> Inversiones </b> y <b class=\"services-text-bold\"> "
+"ventas </b> en\n"
+"                                                            <b class="
+"\"services-text-bold\"> Salud, geriatría, energía\n"
 "                                                            Renovables, "
 "Hospitalidad, Bodega </b> y otros\n"
 "                                                            zonas."
@@ -514,8 +515,8 @@ msgstr ""
 "\n"
 "                                                            Inversiones "
 "inmobiliarias\n"
-"                                                            para <b "
-"class=\"services-text-bold\"> compradores internacionales</b>.\n"
+"                                                            para <b class="
+"\"services-text-bold\"> compradores internacionales</b>.\n"
 "                                                            "
 
 #: templates/content_service5.html:4
@@ -550,6 +551,14 @@ msgstr ""
 #: templates/footer.html:7
 msgid "Todos os direitos reservados"
 msgstr "Todos los derechos reservados"
+
+#: templates/index.html:99
+msgid "Formulário submetido com sucesso!"
+msgstr "Formulario enviado correctamente!"
+
+#: templates/index.html:107
+msgid "Formulário inválido, por favor verifique os dados e tente novamente!"
+msgstr "Formulario no válido, verifique los datos e intente nuevamente!"
 
 #: templates/navbar.html:18
 msgid "Sobre nós"

@@ -3,31 +3,35 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-01 22:26+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2020-05-05 19:15+0000\n"
+"PO-Revision-Date: 2020-05-05 20:21+0100\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.3\n"
 
-#: margemfrontal/settings.py:139
+#: margemfrontal/settings.py:140
 msgid "Portuguese"
 msgstr "Portuguese"
 
-#: margemfrontal/settings.py:140
+#: margemfrontal/settings.py:141
 msgid "English"
 msgstr "English"
 
-#: margemfrontal/settings.py:141
+#: margemfrontal/settings.py:142
 msgid "French"
 msgstr "French"
+
+#: margemfrontal/settings.py:143
+msgid "Spanish"
+msgstr ""
 
 #: templates/about.html:5
 msgid "SOBRE NÓS"
@@ -118,54 +122,54 @@ msgstr ""
 msgid "CONTACTE-NOS"
 msgstr "Contact us"
 
-#: templates/contact_form.html:12
+#: templates/contact_form.html:11
 msgid "Nome"
 msgstr "Name"
 
-#: templates/contact_form.html:18
+#: templates/contact_form.html:17
 msgid "Email"
 msgstr "Email"
 
-#: templates/contact_form.html:24
+#: templates/contact_form.html:23
 msgid "Pais"
 msgstr "Country"
 
-#: templates/contact_form.html:28
+#: templates/contact_form.html:27
 msgid "Assunto"
 msgstr "Subject"
 
-#: templates/contact_form.html:30
+#: templates/contact_form.html:29
 msgid "Mediação de Obras"
 msgstr "Construction Mediation"
 
-#: templates/contact_form.html:31 templates/services.html:17
+#: templates/contact_form.html:30 templates/services.html:17
 #: templates/services.html:51
 msgid "Alarmes e Portas"
 msgstr "Door Alarms"
 
-#: templates/contact_form.html:32 templates/services.html:22
+#: templates/contact_form.html:31 templates/services.html:22
 #: templates/services.html:57
 msgid "Produtos, Alimentos e Bebidas"
 msgstr "Products, Food and Beverage"
 
-#: templates/contact_form.html:33 templates/services.html:63
+#: templates/contact_form.html:32 templates/services.html:63
 msgid "Investimento Imobiliário"
 msgstr "Real Estate Investment"
 
-#: templates/contact_form.html:34 templates/services.html:35
+#: templates/contact_form.html:33 templates/services.html:35
 #: templates/services.html:69
 msgid "Trading"
 msgstr "Trading"
 
-#: templates/contact_form.html:35
+#: templates/contact_form.html:34
 msgid "Outros"
 msgstr "Other"
 
-#: templates/contact_form.html:41
+#: templates/contact_form.html:40
 msgid "Mensagem"
 msgstr "Message"
 
-#: templates/contact_form.html:50
+#: templates/contact_form.html:49
 msgid ""
 "Aceito fornecer os meus dados à Margem Frontal em ordem a receber "
 "informações e possíveis oportunidades"
@@ -173,7 +177,7 @@ msgstr ""
 "I agree to provide my data to Margem Frontal in order to receive information "
 "and possible job offers"
 
-#: templates/contact_form.html:56
+#: templates/contact_form.html:55
 msgid "Enviar"
 msgstr "Send"
 
@@ -301,8 +305,8 @@ msgstr ""
 "Discover the wide range of products\n"
 "                                                            we have at your "
 "disposal\n"
-"                                                            with "
-"guaranteed high\n"
+"                                                            with guaranteed "
+"high\n"
 "                                                            quality."
 
 #: templates/content_service3.html:10
@@ -540,11 +544,19 @@ msgstr ""
 "products with\n"
 "                                                            a highly "
 "competitive price/quality\n"
-"                                                            ratio. "
+"                                                            ratio."
 
 #: templates/footer.html:7
 msgid "Todos os direitos reservados"
-msgstr "All rights reserved."
+msgstr "All rights reserved"
+
+#: templates/index.html:99
+msgid "Formulário submetido com sucesso!"
+msgstr "Form successfully submitted!"
+
+#: templates/index.html:107
+msgid "Formulário inválido, por favor verifique os dados e tente novamente!"
+msgstr "Invalid form, please check the data and try again!"
 
 #: templates/navbar.html:18
 msgid "Sobre nós"
@@ -562,53 +574,57 @@ msgstr "Portfolio"
 msgid "Contactos"
 msgstr "Contacts"
 
-#: templates/overview.html:33
+#: templates/overview.html:34
 msgid "Argentina"
 msgstr "Argentina"
 
-#: templates/overview.html:39
+#: templates/overview.html:40
 msgid "Angola"
 msgstr "Angola"
 
-#: templates/overview.html:45
+#: templates/overview.html:46
 msgid "Brasil"
 msgstr "Brazil"
 
-#: templates/overview.html:51
+#: templates/overview.html:52
 msgid "Costa de Marfim"
 msgstr "Ivory Coast"
 
-#: templates/overview.html:57
+#: templates/overview.html:58
 msgid "Espanha"
 msgstr "Spain"
 
-#: templates/overview.html:63
+#: templates/overview.html:64
 msgid "França"
 msgstr "France"
 
-#: templates/overview.html:69
+#: templates/overview.html:70
 msgid "Reino Unido"
 msgstr "United Kingdom"
 
-#: templates/overview.html:75
+#: templates/overview.html:76
 msgid "Guiné"
 msgstr "Guinea"
 
-#: templates/overview.html:81
+#: templates/overview.html:82
 msgid "Moçambique"
 msgstr "Mozambique"
 
-#: templates/overview.html:87
+#: templates/overview.html:88
 msgid "Peru"
 msgstr "Peru"
 
-#: templates/overview.html:93
+#: templates/overview.html:94
 msgid "Portugal"
 msgstr "Portugal"
 
-#: templates/overview.html:99
+#: templates/overview.html:100
 msgid "Senegal"
 msgstr "Senegal"
+
+#: templates/overview.html:106
+msgid "Uruguai"
+msgstr "Uruguay"
 
 #: templates/portfolio.html:5
 msgid "PORTEFÓLIO"
