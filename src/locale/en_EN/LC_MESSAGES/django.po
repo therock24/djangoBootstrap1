@@ -152,7 +152,7 @@ msgstr "Door Alarms"
 msgid "Produtos, Alimentos e Bebidas"
 msgstr "Products, Food and Beverage"
 
-#: templates/contact_form.html:32 templates/services.html:63
+#: templates/contact_form.html:32 templates/services.html:63 templates/services.html:30
 msgid "Investimento Imobiliário"
 msgstr "Real Estate Investment"
 
@@ -638,6 +638,3 @@ msgstr "SERVICES"
 msgid "Mediação Imobiliária"
 msgstr "Construction Mediation"
 
-#: templates/services.html:30
-msgid "Investimento Mobiliário"
-msgstr "Real Estate Investment"

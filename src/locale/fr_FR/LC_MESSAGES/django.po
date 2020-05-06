@@ -154,7 +154,7 @@ msgstr "Alarmes et Portes"
 msgid "Produtos, Alimentos e Bebidas"
 msgstr "Produits, Aliments et Boissons"
 
-#: templates/contact_form.html:32 templates/services.html:63
+#: templates/contact_form.html:32 templates/services.html:63 templates/services.html:30
 msgid "Investimento Imobiliário"
 msgstr "Investissement immobilier"
 
@@ -640,6 +640,3 @@ msgstr "SERVICES"
 msgid "Mediação Imobiliária"
 msgstr "Médiation en construction"
 
-#: templates/services.html:30
-msgid "Investimento Mobiliário"
-msgstr "Investissement Immobilier"

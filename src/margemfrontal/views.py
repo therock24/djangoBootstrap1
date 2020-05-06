@@ -8,10 +8,8 @@ import logging
 
 def index(request):
  
-    logger = logging.getLogger(__name__)
     
     if request.method == 'POST':
-        logger.error('Request POST!')
         form = ContactForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data.get("Name")
@@ -35,15 +33,12 @@ def index(request):
             return render(request, 'index.html', {'form' : form,'alert': 'fail','alertmsg' : 'Formulário inválido! Verifique os dados do formulário!'})
     else:
         form = ContactForm()
-        logger.error('Request not POST!')
         return render(request, 'index.html', {'form' : form})
 
 def oportunidades(request):
 
-    logger = logging.getLogger(__name__)
     
     if request.method == 'POST':
-        logger.error('Request POST!')
         form = OportunitiesForm(request.POST)
         if form.is_valid():
             name = form.cleaned_data.get("Name")
@@ -70,5 +65,4 @@ def oportunidades(request):
             return render(request, 'oportunidades.html', {'form' : form,'alert': 'fail','alertmsg' : 'Formulário inválido! Verifique os dados do formulário!'})
     else:
         form = OportunitiesForm()
-        logger.error('Request not POST!')
         return render(request, 'oportunidades.html',{'form' : form})

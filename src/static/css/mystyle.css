@@ -50,6 +50,10 @@ h2 {
     font-family: MontSerrat-Bold;
 }
 
+.navbar-text:hover {
+    color: #486d9c;
+}
+
 .navbar-lang-text {
     
     font-family: MontSerrat;
