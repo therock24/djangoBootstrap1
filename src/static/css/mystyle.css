@@ -164,11 +164,11 @@ h2 {
     color: #143867;
     font-family: MontSerrat;
     font-size: 14px;
-    word-wrap: break-word;
+    /*word-wrap: break-word;
     overflow-wrap: break-word;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
-    hyphens: auto;
+    hyphens: auto;*/
 }
 
 .services-text-bold {
@@ -236,6 +236,7 @@ h2 {
     color: #143867;
     font-family: MontSerrat-Bold;
     font-size: 15px;
+	cursor: pointer;
  }
 
  .services-collapse-dropdown-text
