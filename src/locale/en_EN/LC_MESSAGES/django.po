@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-05-05 19:15+0000\n"
-"PO-Revision-Date: 2020-05-05 20:21+0100\n"
+"POT-Creation-Date: 2020-06-24 13:53+0000\n"
+"PO-Revision-Date: 2020-06-24 14:56+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.3\n"
 
 #: margemfrontal/settings.py:140
@@ -31,96 +31,176 @@ msgstr "French"
 
 #: margemfrontal/settings.py:143
 msgid "Spanish"
-msgstr ""
+msgstr "Spanish"
 
 #: templates/about.html:5
-msgid "SOBRE NÓS"
-msgstr "About Us"
+msgid "SOBRE A MARGEM FRONTAL"
+msgstr "ABOUT MARGEM FRONTAL"
 
-#: templates/about.html:10
-msgid ""
-"A <b class=\"about-text-bold\">Margem Frontal</b> é uma empresa nacional que "
-"presta um serviço a particulares e empresas ao nível da compra "
-"(investimento\n"
-"                                            imobiliário), venda de imóveis, "
-"obras de remodelação\n"
-"                                            e construção de casas e de "
-"edifícios. Ainda somos especialistas\n"
-"                                            na colocação de alarmes, câmaras "
-"de videovigilância,\n"
-"                                            portas, etc, quer a nível "
-"pessoal como empresarial. Mais\n"
-"                                            recentemente comercializámos "
-"produtos alimentares e bebidas."
-msgstr ""
-"<b class=\"about-text-bold\">Margem Frontal</b> is a portuguese company that "
-"provides services to individuals and companies in terms of purchasing (real\n"
-"                                            estate investment), property "
-"sales, remodeling\n"
-"                                            and construction of houses and "
-"buildings. We are also specialists\n"
-"                                            in the placement of alarms, "
-"video surveillance cameras,\n"
-"                                            doors, etc, both at a personal "
-"and business level. More\n"
-"                                            recently we have marketed food "
-"products and beverages."
+#: templates/about.html:11
+msgid "MARGEM FRONTAL"
+msgstr "MARGEM FRONTAL"
 
-#: templates/about.html:16
+#: templates/about.html:11
 msgid ""
-" \n"
-"                                            Com <b class=\"about-text-bold"
-"\">mais de 20 anos de experiência</b> a atuar em Portugal e\n"
-"                                            em alguns países europeus, "
-"africanos e americanos, como\n"
-"                                            França, Espanha, Uruguai, "
-"Inglaterra, Peru, Gâmbia, Senegal,\n"
-"                                            Guiné, Angola, Costa de Marfim, "
-"Moçambique, Cabo-verde, entre outros.<br>\n"
-"                                            Procurámos trabalhar com o "
-"intuito de conseguir parcerias\n"
-"                                            com produtos e fabricantes "
-"europeus para conseguir a\n"
-"                                            melhor relação qualidade/preço "
-"para os nossos clientes."
+"é uma Empresa Portuguesa com 20 anos de experiência no mercado com\n"
+"                            intervenção sustentável nas áreas da Segurança, "
+"Construção/Reabilitação de Edifícios,\n"
+"                            Imobiliária e Alimentar, tanto no mercado "
+"Nacional como Internacional.\n"
+"                            "
 msgstr ""
-" \n"
-"                                            With <b class=\"about-text-bold"
-"\">over 20 years of experience</b> working in Portugal and\n"
-"                                            in some European, African and "
-"American countries, such as\n"
-"                                            France, Spain, Urugay, England, "
-"Peru, Gambia, Senegal,\n"
-"                                            Guinea, Angola, Ivory Coast, "
-"Mozambique, Cape-verde, among others.<br>\n"
-"                                            We look forward to work with the "
-"intention of obtaining partnerships\n"
-"                                            with European products and "
-"manufacturers to achieve the\n"
-"                                            best quality/price ratio for our "
-"customers."
+"is a Portuguese company with 20 years of experience in the market with\n"
+"                            sustainable intervention in the areas of "
+"Security, Construction / Rehabilitation of Buildings,\n"
+"                            Real Estate and Food, both in the national and "
+"international markets. "
+
+#: templates/about.html:19 templates/security.html:33
+#: templates/services.html:17
+msgid "SEGURANÇA"
+msgstr "SECURITY"
+
+#: templates/about.html:19
+msgid ""
+"dedica-se à instalação e aplicação dos mais variados equipamentos de\n"
+"                            Videovigilância, Segurança e Domótica.\n"
+"                            "
+msgstr ""
+"is dedicated to the installation and application of the most varied "
+"equipment of\n"
+"                            Video surveillance, Security and Home "
+"Automation. "
+
+#: templates/about.html:25
+msgid "CONSTRUÇÃO e REABILITAÇÃO"
+msgstr "CONSTRUCTION / REHABILITATION"
+
+#: templates/about.html:25
+msgid ""
+"atende às mais recentes necessidades do mercado, nas áreas\n"
+"                            da Construção e Reabilitação de Imóveis Urbanos "
+"e não só, estando envolvida em vários\n"
+"                            projectos na Reabilitação de Imóveis, quer para "
+"Habitação quer para Turismo.\n"
+"                            "
+msgstr ""
+"meets the latest market needs in the areas\n"
+"                            Construction and Rehabilitation of Urban "
+"Properties and beyond, being involved in several\n"
+"                            projects in the Rehabilitation of Real Estate, "
+"both for Housing and for Tourism. "
+
+#: templates/about.html:32 templates/houses.html:33 templates/services.html:43
+msgid "IMOBILIÁRIA"
+msgstr "REAL ESTATE"
 
 #: templates/about.html:32
-msgid "A nossa Missão"
-msgstr "Our Mission"
-
-#: templates/about.html:33
 msgid ""
-"Trabalhámos diariamente para prestar um serviço de aconselhamento para "
-"ajudar as famílias\n"
-"                        e empresas, quer a nível nacional como "
-"internacional, a beneficiarem das melhores condições,\n"
-"                        dando qualidade e preços nos nossos serviços "
-"prestados."
+"é impulsionadora da marca para o estrangeiro, revelando-se até à data um\n"
+"                            enorme Sucesso.\n"
+"                            "
 msgstr ""
-"We work daily to provide a counseling service to help families\n"
-"                        and companies, both nationally and internationally, "
-"to benefit from the best conditions,\n"
-"                        providing quality and prices in our services."
+"is a driving force behind the brand abroad, revealing itself to date\n"
+"                            huge Success. "
+
+#: templates/about.html:38 templates/food.html:33 templates/services.html:56
+msgid "ALIMENTAR"
+msgstr "FOOD"
+
+#: templates/about.html:38
+msgid ""
+"é a mais recente aposta do Grupo, onde através dos inúmeros contactos que\n"
+"                            adquiriu ao longo dos anos, leva até aos quatro "
+"cantos do Mundo os mais variados produtos\n"
+"                            nacionais e internacionais, focando-se "
+"preferencialmente em produtos biológicos.\n"
+"                            "
+msgstr ""
+"is the most recent bet of the Group, where through the countless contacts "
+"that\n"
+"                            acquired over the years, takes the most varied "
+"products to the four corners of the world\n"
+"                            national and international, focusing preferably "
+"on organic products. "
+
+#: templates/about.html:45
+msgid "A NOSSA MISSÃO"
+msgstr "OUR MISSION"
+
+#: templates/about.html:46
+msgid ""
+"Trabalhamos diariamente com os melhores profissionais, explorando as mais "
+"diversas\n"
+"                            soluções, sempre com a melhor relação"
+msgstr ""
+"We work daily with the best professionals, exploring the most diverse\n"
+"                         solutions, always with the best relationship"
+
+#: templates/about.html:47
+msgid "Qualidade/Preço"
+msgstr "Quality/Price"
+
+#: templates/about.html:47
+msgid ""
+", para levar sempre o melhor do\n"
+"                            mercado, até ao mais diverso cliente."
+msgstr ""
+", to always bring the best of\n"
+"                            to the most diverse customer."
+
+#: templates/construction.html:32 templates/food.html:32
+#: templates/houses.html:32 templates/security.html:32
+#: templates/services.html:16 templates/services.html:29
+#: templates/services.html:42 templates/services.html:55
+msgid "Margem Frontal"
+msgstr "Margem Frontal"
+
+#: templates/construction.html:33
+msgid "CONSTRUÇÃO e"
+msgstr "CONSTRUCTION /"
+
+#: templates/construction.html:34 templates/services.html:30
+msgid "REABILITAÇÃO"
+msgstr "REHABILITATION"
+
+#: templates/construction.html:40 templates/houses.html:39
+#: templates/security.html:39
+msgid "Serviços:"
+msgstr "Services:"
+
+#: templates/construction.html:42
+msgid "Construção de imóveis"
+msgstr "Construction of buildings"
+
+#: templates/construction.html:43
+msgid "Remodelação de imóveis"
+msgstr "Real estate remodeling"
+
+#: templates/construction.html:44
+msgid "Ampliação de imóveis"
+msgstr "Property expansion"
+
+#: templates/construction.html:45
+msgid "Caixilharias de Alumínio"
+msgstr "Aluminum Window Frames"
+
+#: templates/construction.html:46 templates/houses.html:45
+#: templates/security.html:47
+msgid "Energias Renováveis"
+msgstr "Renewable energy"
+
+#: templates/contact.html:49 templates/contacts.html:7
+msgid "CONTACTOS"
+msgstr "CONTACTS"
 
 #: templates/contact_form.html:5
-msgid "CONTACTE-NOS"
-msgstr "Contact us"
+msgid ""
+"Qualquer dúvida, não hesite em contactar-nos através de chamada, email, ou "
+"diretamente através do nosso formulário."
+msgstr ""
+"For any questions, do not hesitate to contact us via call, email, or "
+"directly through our form."
 
 #: templates/contact_form.html:11
 msgid "Nome"
@@ -142,34 +222,30 @@ msgstr "Subject"
 msgid "Mediação de Obras"
 msgstr "Construction Mediation"
 
-#: templates/contact_form.html:30 templates/services.html:17
-#: templates/services.html:51
+#: templates/contact_form.html:30 templates/services_v1.html:17
+#: templates/services_v1.html:51
 msgid "Alarmes e Portas"
 msgstr "Door Alarms"
 
-#: templates/contact_form.html:31 templates/services.html:22
-#: templates/services.html:57
+#: templates/contact_form.html:31 templates/services_v1.html:22
+#: templates/services_v1.html:57
 msgid "Produtos, Alimentos e Bebidas"
 msgstr "Products, Food and Beverage"
 
-#: templates/contact_form.html:32 templates/services.html:63 templates/services.html:30
+#: templates/contact_form.html:32 templates/services_v1.html:30
+#: templates/services_v1.html:63
 msgid "Investimento Imobiliário"
 msgstr "Real Estate Investment"
 
-#: templates/contact_form.html:33 templates/services.html:35
-#: templates/services.html:69
-msgid "Trading"
-msgstr "Trading"
-
-#: templates/contact_form.html:34
+#: templates/contact_form.html:33
 msgid "Outros"
 msgstr "Other"
 
-#: templates/contact_form.html:40
+#: templates/contact_form.html:39
 msgid "Mensagem"
 msgstr "Message"
 
-#: templates/contact_form.html:49
+#: templates/contact_form.html:48
 msgid ""
 "Aceito fornecer os meus dados à Margem Frontal em ordem a receber "
 "informações e possíveis oportunidades"
@@ -177,35 +253,31 @@ msgstr ""
 "I agree to provide my data to Margem Frontal in order to receive information "
 "and possible job offers"
 
-#: templates/contact_form.html:55
+#: templates/contact_form.html:54
 msgid "Enviar"
 msgstr "Send"
 
-#: templates/contacts.html:7
-msgid "CONTACTOS"
-msgstr "CONTACTS"
-
-#: templates/contacts.html:16
+#: templates/contacts.html:17
 msgid "PORTUGAL"
 msgstr "PORTUGAL"
 
-#: templates/contacts.html:16
+#: templates/contacts.html:17
 msgid "Porto"
 msgstr "Porto"
 
-#: templates/contacts.html:19
+#: templates/contacts.html:20
 msgid "ESPANHA"
 msgstr "SPAIN"
 
-#: templates/contacts.html:19
+#: templates/contacts.html:20
 msgid "Vigo"
 msgstr "Vigo"
 
-#: templates/contacts.html:22
+#: templates/contacts.html:23
 msgid "FRANÇA"
 msgstr "FRANCE"
 
-#: templates/contacts.html:22
+#: templates/contacts.html:23
 msgid "Paris - Mónaco"
 msgstr "Paris - Monaco"
 
@@ -317,7 +389,7 @@ msgstr "Biological Products"
 msgid "Produtos lácteos"
 msgstr "Dairy products"
 
-#: templates/content_service3.html:15
+#: templates/content_service3.html:15 templates/food.html:58
 msgid "Presunto"
 msgstr "Ham"
 
@@ -325,7 +397,7 @@ msgstr "Ham"
 msgid "Molhos e Vinagres"
 msgstr "Sauces and Vinegars"
 
-#: templates/content_service3.html:17
+#: templates/content_service3.html:17 templates/food.html:75
 msgid "Mel"
 msgstr "Honey"
 
@@ -353,7 +425,7 @@ msgstr "Canned Fish"
 msgid "Compotas em tubo"
 msgstr "Tube jams"
 
-#: templates/content_service3.html:24
+#: templates/content_service3.html:24 templates/food.html:80
 msgid "Bacalhau congelado"
 msgstr "Frozen codfish"
 
@@ -373,11 +445,11 @@ msgstr "Semi dry codfish"
 msgid "Outros peixes"
 msgstr "Other fish"
 
-#: templates/content_service3.html:29
+#: templates/content_service3.html:29 templates/food.html:72
 msgid "Azeitonas"
 msgstr "Olives"
 
-#: templates/content_service3.html:30
+#: templates/content_service3.html:30 templates/food.html:74
 msgid "Azeite"
 msgstr "Olive oil"
 
@@ -393,7 +465,7 @@ msgstr "Pre-cooked meals"
 msgid "Bebidas"
 msgstr "Beverages"
 
-#: templates/content_service3.html:41
+#: templates/content_service3.html:41 templates/food.html:51
 msgid "Refrigerantes"
 msgstr "Soft drinks"
 
@@ -409,7 +481,7 @@ msgstr "Green wine"
 msgid "Vinho do Tejo"
 msgstr "Tagus wine"
 
-#: templates/content_service3.html:45
+#: templates/content_service3.html:45 templates/food.html:45
 msgid "Vinho do Porto"
 msgstr "Port wine"
 
@@ -546,31 +618,167 @@ msgstr ""
 "competitive price/quality\n"
 "                                                            ratio."
 
+#: templates/food.html:39
+msgid "Bebidas Alcoólicas:"
+msgstr "Alcoholic beverages:"
+
+#: templates/food.html:41
+msgid "Vinho Maduro Branco e Tinto"
+msgstr "Mature White and Red Wine"
+
+#: templates/food.html:42
+msgid "Vinho Verde Branco e Tinto"
+msgstr "White and Red Green Wine"
+
+#: templates/food.html:43
+msgid "Vinho Rosé"
+msgstr "Rose wine"
+
+#: templates/food.html:44
+msgid "Espumante"
+msgstr "Sparkling wine"
+
+#: templates/food.html:46
+msgid "Aguardente"
+msgstr "Brandy"
+
+#: templates/food.html:47
+msgid "Brandy e outros"
+msgstr "Brandy and others"
+
+#: templates/food.html:49
+msgid "Bebidas não alcoólicas:"
+msgstr "Non-alcoholic drinks:"
+
+#: templates/food.html:52
+msgid "Água Mineral"
+msgstr "Mineral water"
+
+#: templates/food.html:54
+msgid "Charcutaria:"
+msgstr "Charcuterie:"
+
+#: templates/food.html:56
+msgid "Enchidos"
+msgstr "Sausages"
+
+#: templates/food.html:57
+msgid "Queijos"
+msgstr "Cheese"
+
+#: templates/food.html:59
+msgid "Refeições Pré-Cozinhadas"
+msgstr "Pre-cooked meals"
+
+#: templates/food.html:61
+msgid "Produtos Lácteos:"
+msgstr "Dairy Products:"
+
+#: templates/food.html:63
+msgid "Leite"
+msgstr "Milk"
+
+#: templates/food.html:64
+msgid "Manteiga e Derivados"
+msgstr "Butter and Derivatives"
+
+#: templates/food.html:66
+msgid "Conservas:"
+msgstr "Canned:"
+
+#: templates/food.html:68
+msgid "Carne"
+msgstr "Beef"
+
+#: templates/food.html:69
+msgid "Peixe"
+msgstr "Fish"
+
+#: templates/food.html:70
+msgid "Vegetais"
+msgstr "Vegetables"
+
+#: templates/food.html:71
+msgid "Leguminosas"
+msgstr "Legumes"
+
+#: templates/food.html:73
+msgid "Óleo"
+msgstr "Oil"
+
+#: templates/food.html:77
+msgid "Bacalhau:"
+msgstr "Codfish:"
+
+#: templates/food.html:79
+msgid "Bacalhau seco"
+msgstr "Dry codfish"
+
+#: templates/food.html:82
+msgid "Produtos Gourmet"
+msgstr "Gourmet Products"
+
+#: templates/food.html:83
+msgid "Perfumaria"
+msgstr "Perfumery"
+
+#: templates/food.html:84
+msgid "Produtos de Higiene Pessoal"
+msgstr "Personal hygiene products"
+
+#: templates/food.html:85
+msgid "Detergentes e Sabão"
+msgstr "Detergents and Soap"
+
 #: templates/footer.html:7
 msgid "Todos os direitos reservados"
 msgstr "All rights reserved"
 
-#: templates/index.html:99
+#: templates/houses.html:41
+msgid "Investimentos Imobiliários para compradores internacionais"
+msgstr "Real Estate Investments for International Buyers"
+
+#: templates/houses.html:42
+msgid "Investimento Imobiliário na área da Saúde e Geriatria"
+msgstr "Real Estate Investment in Health and Geriatrics"
+
+#: templates/houses.html:43
+msgid "Investimento Imobiliário na área Hoteleira"
+msgstr "Real Estate Investment in the Hotel Area"
+
+#: templates/houses.html:44
+msgid "Investimento em Propriedades rurais e Vitivinículas"
+msgstr "Investment in Rural Properties and Vitivinicles"
+
+#: templates/index.html:97
 msgid "Formulário submetido com sucesso!"
 msgstr "Form successfully submitted!"
 
-#: templates/index.html:107
+#: templates/index.html:105
 msgid "Formulário inválido, por favor verifique os dados e tente novamente!"
 msgstr "Invalid form, please check the data and try again!"
 
-#: templates/navbar.html:18
-msgid "Sobre nós"
-msgstr "About us"
-
-#: templates/navbar.html:21
+#: templates/navbar.html:19
 msgid "Serviços"
 msgstr "Services"
 
-#: templates/navbar.html:24
-msgid "Portefólio"
-msgstr "Portfolio"
+#: templates/navbar.html:22 templates/services.html:69
+msgid "Segurança"
+msgstr "Security"
 
-#: templates/navbar.html:27
+#: templates/navbar.html:23 templates/services.html:72
+msgid "Construção e Reabilitação"
+msgstr "Construction and Rehabilitation"
+
+#: templates/navbar.html:24 templates/services.html:75
+msgid "Imobiliária"
+msgstr "Real Estate"
+
+#: templates/navbar.html:25 templates/services.html:78
+msgid "Alimentar"
+msgstr "Food"
+
+#: templates/navbar.html:29
 msgid "Contactos"
 msgstr "Contacts"
 
@@ -630,11 +838,132 @@ msgstr "Uruguay"
 msgid "PORTEFÓLIO"
 msgstr "PORTFOLIO"
 
-#: templates/services.html:5
+#: templates/security.html:41
+msgid "CCTV"
+msgstr "CCTV"
+
+#: templates/security.html:42
+msgid "Alarmes"
+msgstr "Door Alarms"
+
+#: templates/security.html:43
+msgid "Automatismos"
+msgstr "Automation"
+
+#: templates/security.html:44
+msgid "Sistemas de Incêndio"
+msgstr "Fire Systems"
+
+#: templates/security.html:45
+msgid "Portas"
+msgstr "Doors"
+
+#: templates/security.html:46
+msgid "Grades de Segurança"
+msgstr "Security Grids"
+
+#: templates/services.html:5 templates/services_v1.html:5
 msgid "SERVIÇOS"
 msgstr "SERVICES"
 
-#: templates/services.html:12 templates/services.html:45
+#: templates/services.html:30
+msgid "CONSTRUÇÃO e "
+msgstr "CONSTRUCTION / "
+
+#: templates/services_v1.html:12 templates/services_v1.html:45
 msgid "Mediação Imobiliária"
 msgstr "Construction Mediation"
 
+#: templates/services_v1.html:35 templates/services_v1.html:69
+msgid "Trading"
+msgstr "Trading"
+
+#~ msgid "SOBRE NÓS"
+#~ msgstr "About Us"
+
+#~ msgid ""
+#~ "A <b class=\"about-text-bold\">Margem Frontal</b> é uma empresa nacional "
+#~ "que presta um serviço a particulares e empresas ao nível da compra "
+#~ "(investimento\n"
+#~ "                                            imobiliário), venda de "
+#~ "imóveis, obras de remodelação\n"
+#~ "                                            e construção de casas e de "
+#~ "edifícios. Ainda somos especialistas\n"
+#~ "                                            na colocação de alarmes, "
+#~ "câmaras de videovigilância,\n"
+#~ "                                            portas, etc, quer a nível "
+#~ "pessoal como empresarial. Mais\n"
+#~ "                                            recentemente comercializámos "
+#~ "produtos alimentares e bebidas."
+#~ msgstr ""
+#~ "<b class=\"about-text-bold\">Margem Frontal</b> is a portuguese company "
+#~ "that provides services to individuals and companies in terms of "
+#~ "purchasing (real\n"
+#~ "                                            estate investment), property "
+#~ "sales, remodeling\n"
+#~ "                                            and construction of houses "
+#~ "and buildings. We are also specialists\n"
+#~ "                                            in the placement of alarms, "
+#~ "video surveillance cameras,\n"
+#~ "                                            doors, etc, both at a "
+#~ "personal and business level. More\n"
+#~ "                                            recently we have marketed "
+#~ "food products and beverages."
+
+#~ msgid ""
+#~ " \n"
+#~ "                                            Com <b class=\"about-text-bold"
+#~ "\">mais de 20 anos de experiência</b> a atuar em Portugal e\n"
+#~ "                                            em alguns países europeus, "
+#~ "africanos e americanos, como\n"
+#~ "                                            França, Espanha, Uruguai, "
+#~ "Inglaterra, Peru, Gâmbia, Senegal,\n"
+#~ "                                            Guiné, Angola, Costa de "
+#~ "Marfim, Moçambique, Cabo-verde, entre outros.<br>\n"
+#~ "                                            Procurámos trabalhar com o "
+#~ "intuito de conseguir parcerias\n"
+#~ "                                            com produtos e fabricantes "
+#~ "europeus para conseguir a\n"
+#~ "                                            melhor relação qualidade/"
+#~ "preço para os nossos clientes."
+#~ msgstr ""
+#~ " \n"
+#~ "                                            With <b class=\"about-text-"
+#~ "bold\">over 20 years of experience</b> working in Portugal and\n"
+#~ "                                            in some European, African and "
+#~ "American countries, such as\n"
+#~ "                                            France, Spain, Urugay, "
+#~ "England, Peru, Gambia, Senegal,\n"
+#~ "                                            Guinea, Angola, Ivory Coast, "
+#~ "Mozambique, Cape-verde, among others.<br>\n"
+#~ "                                            We look forward to work with "
+#~ "the intention of obtaining partnerships\n"
+#~ "                                            with European products and "
+#~ "manufacturers to achieve the\n"
+#~ "                                            best quality/price ratio for "
+#~ "our customers."
+
+#~ msgid "A nossa Missão"
+#~ msgstr "Our Mission"
+
+#~ msgid ""
+#~ "Trabalhámos diariamente para prestar um serviço de aconselhamento para "
+#~ "ajudar as famílias\n"
+#~ "                        e empresas, quer a nível nacional como "
+#~ "internacional, a beneficiarem das melhores condições,\n"
+#~ "                        dando qualidade e preços nos nossos serviços "
+#~ "prestados."
+#~ msgstr ""
+#~ "We work daily to provide a counseling service to help families\n"
+#~ "                        and companies, both nationally and "
+#~ "internationally, to benefit from the best conditions,\n"
+#~ "                        providing quality and prices in our services."
+
+#~ msgid "CONTACTE-NOS"
+#~ msgstr "Contact us"
+
+#~ msgid "Sobre nós"
+#~ msgstr "About us"
+
+#~ msgid "Portefólio"
+#~ msgstr "Portfolio"

@@ -13,10 +13,17 @@
 }
 
 @font-face {
+    font-family: 'MontSerrat-ExtraBold';
+    font-style: normal;
+    src: local('MontSerrat-ExtraBold'), url('/static/fonts/Montserrat-ExtraBold.otf') format('opentype');
+}
+
+@font-face {
     font-family: 'MontSerrat-Black';
     font-style: normal;
     src: local('MontSerrat-Black'), url('/static/fonts/Montserrat-Black.otf') format('opentype');
 }
+
 
 
 /* Headings */
@@ -48,6 +55,11 @@ h2 {
 .navbar-text {
     color: #ffffff;
     font-family: MontSerrat-Bold;
+}
+
+.navbar-dropdown-text {
+    font-family: MontSerrat-Bold;
+    color: #143867;
 }
 
 .navbar-text:hover {
@@ -154,10 +166,79 @@ h2 {
 
 /* Services */
 
+
+.square {
+    float:left;
+    position: relative;
+    width: 23%;
+    padding-bottom : 23%; /* = width for a 1:1 aspect ratio */
+    margin:1%;
+    background-color:#C20000;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.content {
+    position:absolute;
+    height:90%; /* = 100% - 2*5% padding */
+    width:90%; /* = 100% - 2*5% padding */
+    padding: 5%;
+    left:5%;
+    top:5%;
+    
+}
+
+
+/*  For responsive images */
+
+.content .rs{
+    width:auto;
+    height:auto;
+    max-height:60%;
+    max-width:60%;
+}
+
+.table{
+    display:table;
+    width:100%;
+    height:100%;
+}
+.table-cell{
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.service-square {
+    background-color: #C20000;
+}
+
 .services-title-bold {
+    color: white;
+    font-family: MontSerrat-Bold;
+}
+
+.services-title-extrabold {
+    color: white;
+    font-family: MontSerrat-ExtraBold;
+}
+
+
+
+.service-list-title {
+    font-size: 1.1em;
     color: #143867;
     font-family: MontSerrat-Bold;
-    font-size: 18px;
+	cursor: pointer;
+}
+
+.service-list-items {
+    font-size: 0.8em;
+    color: #143867;
+    font-family: MontSerrat;
+}
+
+.service-content-container {
+    background-color: white;
 }
 
 .services-text {
@@ -246,6 +327,66 @@ h2 {
     font-size: 13px;
  }
 
+ @media screen and (min-width: 701px) {
+
+    .service-list-title {
+        font-size: 1.5em;
+    }
+    
+    .service-list-items {
+        font-size: 1.1em;
+    }
+  }
+
+@media screen and (min-width: 1101px)  {
+    .services-title-bold {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+    .services-title-extrabold {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+    .services-title-bold {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+
+    .services-title-extrabold {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .services-title-bold {
+        font-size: 0.8em;
+        line-height: 0.9em;
+    }
+
+    .services-title-extrabold {
+        font-size: 0.8em;
+        line-height: 0.9em;
+    }
+}
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 700px) {
+
+    .service-list-title {
+        font-size: 1.1em;
+    }
+    
+    .service-list-items {
+        font-size: 0.9em;
+    }
+
+  }
+
  /* Portfolio */
 
  .portfolio-overlay {
@@ -278,9 +419,21 @@ h2 {
 }
 
  /* Oportunities */
+
+ .container-oportunities {
+    background-color: #143867;
+}
+
+
+
  .text-oportunities {
     font-family: MontSerrat;
     font-size: 14px;
+}
+
+.oportunities-form-text {
+    font-family: MontSerrat;
+    color: white;
 }
 
 .oportunities-button {
@@ -314,11 +467,13 @@ h2 {
 
 .contact-form-text {
     font-family: MontSerrat;
-    color: #ffffff;
+    color: #143867;
 }
 
 .contact-form-field {
     border-radius: 15px;
+    border: 2px solid #143867;
+
 }
 
 .contact-button {
@@ -341,9 +496,32 @@ h2 {
     color: white;
 }
 
+.contact-h1 {
+    font-family: MontSerrat-ExtraBold;
+    color: white;
+}
+
+@media screen and (min-width: 701px) {
+    .contact-h1 {
+        font-size: 5em;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 700px) {
+    .contact-h1 {
+        font-size: 3em;
+    }
+  }
+
 .contact-h4 {
     font-family: MontSerrat-Bold;
-    color: #ffffff;
+    color: #C20000;
+}
+
+.contact-countries-h4 {
+    font-family: MontSerrat-Bold;
+    color: white;
 }
 
 .contact-icon {
@@ -352,6 +530,14 @@ h2 {
 
 .container-contacts {
     background-color: #143867;
+}
+
+.container-contacts-form {
+    background-color: white;
+}
+
+.container-contact-text {
+    background-color: white;
 }
 
 

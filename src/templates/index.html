@@ -79,7 +79,7 @@
     //function portfolio_overlay_open(imgid){
     //    $("#portfolio_overlay").show();
     //    $('#portfolio_overlay_img').attr('src', 'static/img/grid/'+imgid+'.jpg');                            
-    }
+    //}
     </script>
 
 
@@ -120,10 +120,6 @@
     <!-- SERVICOS (Services)-->
     {% include 'services.html'%}
 
-   
-    <!-- Portfolio -->
-   {% include 'portfolio.html'%}
-
     <!-- CARREIRA (career)-->
     {% get_current_language as LANGUAGE_CODE %}
     {% if LANGUAGE_CODE == 'pt-pt' %}
@@ -142,8 +138,6 @@
     </div>
     {% endif %}
 
-    <!-- CONTACTOS (contacts) -->
-    {% include 'contact_form.html' %}
 
     {% include 'contacts.html' %}
 

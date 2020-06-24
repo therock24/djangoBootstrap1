@@ -5,35 +5,59 @@
         <h2 class="text-center pb-5">{%trans "SERVIÇOS"%}</h2>
         <div class="d-none d-sm-block">
             <div class="row justify-content-center">
-                <div class="col-11 col-lg-8 col-xl-7">
+                <div class="col-10 col-sm-10 col-md-10 col-lg-8 col-xl-7">
                     <div class="row">
-                        <div class="col-6 col-sm-6 col-md-4 text-center">
-                            <img  src="{% static 'img/services/1.svg' %}" class="w-50 h-auto img-fluid pb-3"><br>
-                            <b class="services-title-bold mt-4">{%trans "Mediação Imobiliária"%}</b>
-                            {% include 'content_service1.html' %}
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 text-center">
-                            <img  src="{% static 'img/services/2.svg' %}" class="w-50 h-auto img-fluid pb-3"><br>
-                            <b class="services-title-bold mt-2">{%trans "Alarmes e Portas"%}</b>
-                            {% include 'content_service2.html' %}
-                        </div>
-                        <div class="col-6 col-sm-6 col-md-4 text-center">
-                            <img src="{% static 'img/services/3.svg' %}" class="w-50 h-auto img-fluid pb-3"><br>
-                            <b class="services-title-bold ">{%trans "Produtos, Alimentos e Bebidas"%}</b>
-                            <div class="text-justify text-break">
-                            {% include 'content_service3.html' %}
+                        <div class="square" onclick="location.href='{% url 'security'%}';" >
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <div class="text-center">
+                                            <img  src="{% static 'img/services/1.svg' %}" class="rs"><br>
+                                            <p class="services-title-bold">{%trans "Margem Frontal"%}<br>
+                                            <b class="services-title-extrabold">{%trans "SEGURANÇA"%}</b></p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    
-                        <div class="col-6 offset-md-2 col-sm-6 col-md-4 text-center">
-                            <img  src="{% static 'img/services/4.svg' %}" class="w-50 h-auto img-fluid pb-3"><br>
-                            <b class="services-title-bold mt-2">{%trans "Investimento Imobiliário"%}</b>
-                            {% include 'content_service4.html' %}
+                        <div class="square" onclick="location.href='{% url 'construction'%}';">
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <div class="text-center">
+                                            <img  src="{% static 'img/services/2.svg' %}" class="rs"><br>
+                                            <p class="services-title-bold">{%trans "Margem Frontal"%}<br>
+                                            <b class="services-title-extrabold">{%trans "CONSTRUÇÃO e "%}{%trans "REABILITAÇÃO"%}</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 col-sm-6 col-md-4 text-center">
-                            <img  src="{% static 'img/services/5.svg' %}" class="w-50 h-auto img-fluid pb-3"><br>
-                            <b class="services-title-bold mt-2">{%trans "Trading"%}</b>
-                            {% include 'content_service5.html' %}
+                        <div class="square" onclick="location.href='{% url 'houses'%}';" >
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <div class="text-center">
+                                            <img src="{% static 'img/services/3.svg' %}" class="rs"><br>
+                                            <p class="services-title-bold">{%trans "Margem Frontal"%}<br>
+                                            <b class="services-title-extrabold ">{%trans "IMOBILIÁRIA"%}</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="square" onclick="location.href='{% url 'food'%}';" >
+                            <div class="content">
+                                <div class="table">
+                                    <div class="table-cell">
+                                        <div class="text-center">
+                                            <img  src="{% static 'img/services/4.svg' %}" class="rs"><br>
+                                            <p class="services-title-bold">{%trans "Margem Frontal"%}<br>
+                                            <b class="services-title-extrabold">{%trans "ALIMENTAR"%}</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,37 +65,20 @@
         </div>
          <div class="container justify-content-center d-block d-sm-none">
             <div class="col">
-                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService1" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <img class="services-collapse-icon" src="{% static 'img/services/1.svg' %}"></img>{%trans "Mediação Imobiliária"%}
+                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService1" role="button">
+                    <img class="services-collapse-icon" src="{% static 'img/services/1.svg' %}"></img>{%trans "Segurança"%}
                 </a></p>
-                <div class="collapse" id="collapseService1">
-                    {% include 'content_service1.html' %}
-                </div>
-                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService2" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <img class="services-collapse-icon" src="{% static 'img/services/2.svg' %}"></img>{%trans "Alarmes e Portas"%}
+                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService2" role="button">
+                    <img class="services-collapse-icon" src="{% static 'img/services/2.svg' %}"></img>{%trans "Construção e Reabilitação"%}
                 </a></p>
-                <div class="collapse" id="collapseService2">
-                    {% include 'content_service2.html' %}
-                </div>
-                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService3" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <img class="services-collapse-icon" src="{% static 'img/services/3.svg' %}"></img>{%trans "Produtos, Alimentos e Bebidas"%}
+                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService3" role="button">
+                    <img class="services-collapse-icon" src="{% static 'img/services/3.svg' %}"></img>{%trans "Imobiliária"%}
                 </a></p>
-                <div class="collapse" id="collapseService3">
-                        {% include 'content_service3.html' %}
-                </div>
-                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService4" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <img class="services-collapse-icon" src="{% static 'img/services/4.svg' %}"></img>{%trans "Investimento Imobiliário"%}
+                <p><a class="btn services-button text-21pt-white" data-toggle="collapse" href="#collapseService4" role="button">
+                    <img class="services-collapse-icon" src="{% static 'img/services/4.svg' %}"></img>{%trans "Alimentar"%}
                 </a></p>
-                <div class="collapse" id="collapseService4">
-                    {% include 'content_service4.html' %}
-                </div>
-                <p><a class="btn services-button text-21pt-white align-left" data-toggle="collapse" href="#collapseService5" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    <img class="services-collapse-icon" src="{% static 'img/services/5.svg' %}"></img>{%trans "Trading"%}
-                </a></p>
-                <div class="collapse" id="collapseService5">
-                    {% include 'content_service5.html' %}
-                </div>
             </div>
         </div>
 
     </div>
+

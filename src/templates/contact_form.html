@@ -1,8 +1,8 @@
 {% load static %}
 {% load i18n %}
 
-<div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
-    <h2 class="text-center pb-5">{%trans "CONTACTE-NOS"%}</h2>
+<div id="contacts" class="container-fluid container-contacts-form pt-5 pb-5">
+    <p class="contact-form-text text-center pb-3">{% trans 'Qualquer dúvida, não hesite em contactar-nos através de chamada, email, ou diretamente através do nosso formulário.' %}</p>
     <form method="post" action="{% url 'index' %}" class="col-lg-10 offset-lg-1">
         <!-- Very Important csrf Token -->
         {% csrf_token %}
@@ -25,12 +25,11 @@
             </div>
             <div class="col-10 col-md-4 mb-3">
                 <label for="{{ form.Subject.id_for_label }}" class="contact-form-text">{%trans "Assunto" %}</label>                      
-                <select class="form-control" id="{{ form.Subject.id_for_label }}" name="{{ form.Subject.html_name }}" maxlength="{{ form.Subject.field.max_length }}">
+                <select class="form-control contact-form-field" id="{{ form.Subject.id_for_label }}" name="{{ form.Subject.html_name }}" maxlength="{{ form.Subject.field.max_length }}">
                     <option selected="selected">{%trans "Mediação de Obras" %}</option>
                     <option>{%trans "Alarmes e Portas" %}</option>
                     <option>{%trans "Produtos, Alimentos e Bebidas" %}</option>
                     <option>{%trans "Investimento Imobiliário" %}</option>
-                    <option>{%trans "Trading" %}</option>
                     <option>{%trans "Outros" %}</option>          
                 </select>
             </div>

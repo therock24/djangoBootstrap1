@@ -16,13 +16,18 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from .views import index, oportunidades
+from .views import index, oportunidades, houses, construction, security, food, contact
 from django.conf.urls import include, url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index, name='index'),
     path('oportunidades/',oportunidades, name='oportunidades'),
+    path('houses/',houses, name='houses'),
+    path('construction/',construction, name='construction'),
+    path('security/',security, name='security'),
+    path('food/',food, name='food'),
+    path('contact/',contact, name='contact'),
     url(r'^i18n/', include('django.conf.urls.i18n')),
 ]
 

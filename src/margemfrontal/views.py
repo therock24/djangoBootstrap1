@@ -4,10 +4,22 @@ from .forms import ContactForm, OportunitiesForm
 from django.core.mail import send_mail
 import logging
 
-
-
 def index(request):
- 
+        return render(request, 'index.html')
+
+def food(request):
+        return render(request, 'food.html')
+
+def security(request):
+        return render(request, 'security.html')
+
+def construction(request):
+        return render(request, 'construction.html')
+
+def houses(request):
+        return render(request, 'houses.html')
+
+def contact(request):
     
     if request.method == 'POST':
         form = ContactForm(request.POST)
@@ -28,16 +40,15 @@ def index(request):
 
             send_mail(subject, 
                 message, EMAIL_HOST_USER, [RECIPIENT_EMAIL], fail_silently = False)
-            return render(request, 'index.html', {'form' : form, 'alert': 'success','alertmsg' : 'Pedido enviado com sucesso!'})
+            return render(request, 'contact.html', {'form' : form, 'alert': 'success','alertmsg' : 'Pedido enviado com sucesso!'})
         else:
-            return render(request, 'index.html', {'form' : form,'alert': 'fail','alertmsg' : 'Formulário inválido! Verifique os dados do formulário!'})
+            return render(request, 'contact.html', {'form' : form,'alert': 'fail','alertmsg' : 'Formulário inválido! Verifique os dados do formulário!'})
     else:
         form = ContactForm()
-        return render(request, 'index.html', {'form' : form})
+        return render(request, 'contact.html', {'form' : form})
 
 def oportunidades(request):
 
-    
     if request.method == 'POST':
         form = OportunitiesForm(request.POST)
         if form.is_valid():

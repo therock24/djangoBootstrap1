@@ -46,15 +46,16 @@
 {% endifequal %}
 
 
-<div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
-    <div class="col-lg-8 offset-lg-2">
-        <h2 class="text-center pb-5">OPORTUNIDADE DE CARREIRA OU PARCERIA</h2>
+<div id="oportunities" class="container-fluid container-oportunities pt-5 pb-5">
+    <div class="row justify-content-center">
+    <div class="col-10 col-lg-10">
+        <h2 class="text-center pb-5">OPORTUNIDADE DE <br>CARREIRA OU PARCERIA</h2>
         <form method="post">
             {% csrf_token %}
             <div class="form-group">
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label for="{{ form.Name.id_for_label }}" class="contact-form-text">Nome:</label>
+                        <label for="{{ form.Name.id_for_label }}" class="oportunities-form-text">Nome:</label>
                         <input type="text" class="form-control contact-form-field" id="{{ form.Name.id_for_label }}" name="{{ form.Name.html_name }}" maxlength="{{ form.Name.field.max_length }}" required="" >
                     </div>
                 </div>
@@ -62,7 +63,7 @@
             <div class="form-group">
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label for="{{ form.Email.id_for_label }}" class="contact-form-text">Email:</label>
+                        <label for="{{ form.Email.id_for_label }}" class="oportunities-form-text">Email:</label>
                         <input type="email" class="form-control contact-form-field" id="{{ form.Email.id_for_label }}" name="{{ form.Email.html_name }}" maxlength="{{ form.Email.field.max_length }}" required="">
                     </div>
                 </div>
@@ -70,13 +71,13 @@
             <div class="form-row justify-content-center">
                 <div class="col-md-3 mb-3">
                     <div class="form-group">
-                        <label for="{{ form.DistrictHome.id_for_label }}" class="contact-form-text">Distrito onde vive</label>
+                        <label for="{{ form.DistrictHome.id_for_label }}" class="oportunities-form-text">Distrito onde vive</label>
                         <input type="text" class="form-control contact-form-field" id="{{ form.DistrictHome.id_for_label }}" name="{{ form.DistrictHome.html_name }}" maxlength="{{ form.DistrictHome.field.max_length }}"required="" >
                     </div>
                 </div>
                 <div class="col-md-5 mb-3">
                     <div class="form-group">
-                        <label for="{{ form.DistrictWork.id_for_label }}" class="contact-form-text">Distrito onde pretende colaborar</label>
+                        <label for="{{ form.DistrictWork.id_for_label }}" class="oportunities-form-text">Distrito onde pretende colaborar</label>
                         <input type="text" class="form-control contact-form-field" id="{{ form.DistrictWork.id_for_label }}" name="{{ form.DistrictWork.html_name }}" maxlength="{{ form.DistrictWork.field.max_length }}" required="" >
                     </div>
                 </div>
@@ -84,7 +85,7 @@
             <div class="form-group">
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label for="{{ form.Preference.id_for_label }}" class="contact-form-text">Preferência</label>
+                        <label for="{{ form.Preference.id_for_label }}" class="oportunities-form-text">Preferência</label>
                         <select class="form-control" id="{{ form.Preference.id_for_label }}" name="{{ form.Preference.html_name }}" maxlength="{{ form.Preference.field.max_length }}">
                             <option selected="selected">Diretor Comercial</option>
                             <option>Consultor</option>
@@ -98,13 +99,12 @@
             <div class="form-group">
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label for="{{ form.Service.id_for_label }}" class="contact-form-text">Serviços onde pretende colaborar</label>
+                        <label for="{{ form.Service.id_for_label }}" class="oportunities-form-text">Serviços onde pretende colaborar</label>
                         <select class="form-control" id="{{ form.Service.id_for_label }}" name="{{ form.Service.html_name }}" maxlength="{{ form.Service.field.max_length }}" >
                             <option selected="selected">Mediação de Obras</option>
                             <option>Alarmes e Portas</option>
                             <option>Produtos, Alimentos e Bebidas</option>
                             <option>Investimento Imobiliário</option>
-                            <option>Trading</option>
                             <option>Outros</option>
                         </select>
                     </div>
@@ -113,7 +113,7 @@
             <div class="form-group">
                 <div class="form-row justify-content-center">
                     <div class="col-md-8 mb-3">
-                        <label for="{{ form.Message.id_for_label }}" class="contact-form-text" >Mensagem</label>
+                        <label for="{{ form.Message.id_for_label }}" class="oportunities-form-text" >Mensagem</label>
                         <textarea rows="5" type="text" class="form-control contact-form-field" id="{{ form.Message.id_for_label }}" name="{{ form.Message.html_name }}" maxlength="{{ form.Message.field.max_length }}" required=""></textarea> 
                     </div>
                 </div>
@@ -123,7 +123,7 @@
                     <div class="col-md-8 mb-3">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
-                            <label class="form-check-label contact-form-text" for="defaultCheck1">
+                            <label class="form-check-label oportunities-form-text" for="defaultCheck1">
                                 Aceito fornecer os meus dados à Margem Frontal em ordem a receber
 informações e possíveis oportunidades
                             </label>
@@ -135,6 +135,7 @@ informações e possíveis oportunidades
                 <button class="btn btn-primary contact-button" type="submit">Enviar</button>
             </div>
         </form>
+    </div>
     </div>
 </div>
 

@@ -1,0 +1,234 @@
+{% load static %}
+{% load i18n %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'jmap/jqvmap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    <link href="{% static 'fa/css/all.min.css' %}" media="screen" rel="stylesheet" type="text/css">
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/jquery-3.5.0.min.js' %}"></script>
+
+
+    <title>Margem Frontal - Oportunidades</title>
+
+</head>
+
+<body class="container-footer">
+
+    {% include "navbar.html" %}
+
+    {% ifequal alert "success" %}
+    <div class="alert alert-success" role="alert">
+    {{alertmsg}}
+    </div>
+    {% endifequal %}
+     {% ifequal alert "fail" %}
+    <div class="alert alert-warning" role="alert">
+    {{alertmsg}}
+    </div>
+    {% endifequal %}
+
+    <!-- CONTACTOS (contacts) -->
+    <div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
+        <div class="col-lg-8 offset-lg-2">
+            <h2 class="text-center pb-5">OPORTUNIDADE DE CARREIRA OU PARCERIA</h2>
+            <form  method="post" novalidate>
+                <!-- Very Important csrf Token -->
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="id_Name" class="contact-form-text" >Nome</label>
+                            <input type="text" class="form-control contact-form-field" maxlength="100" id="id_Name" name="Name" maxlength="{{ form.Name.field.max_length }}" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="{{ form.Email.id_for_label }}" class="contact-form-text">Email</label>
+                            <input type="email" class="form-control contact-form-field"  maxlength="50" id="{{ form.Email.id_for_label }}" name="{{ form.Email.html_name }}" maxlength="{{ form.Email.field.max_length }}" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-3 mb-3">
+                            <label for="{{ form.DistrictHome.id_for_label }}" class="contact-form-text">Distrito onde vive</label>
+                            <input type="text" class="form-control contact-form-field" maxlength="30" id="{{ form.DistrictHome.id_for_label }}" name="{{ form.DistrictHome.html_name }}" maxlength="{{ form.DistrictHome.field.max_length }}"required>
+                        </div>
+                        <div class="col-md-5 mb-3">
+                            <label for="{{ form.DistrictWork.id_for_label }}" class="contact-form-text">Distrito onde pretende colaborar</label>
+                            <input type="text" class="form-control contact-form-field" maxlength="30" id="{{ form.DistrictWork.id_for_label }}" name="{{ form.DistrictWork.html_name }}" maxlength="{{ form.DistrictWork.field.max_length }}" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label class="contact-form-text" for="{{ form.Preference.id_for_label }}">Preferência</label>
+                            <select class="form-control" id="{{ form.Preference.id_for_label }}" name="{{ form.Preference.html_name }}" maxlength="{{ form.Preference.field.max_length }}">
+                                <option>Diretor Comercial</option>
+                                <option>Consultor</option>
+                                <option>Comissionista</option>
+                                <option>Técnico</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label class="contact-form-text" for="{{ form.Service.id_for_label }}">Serviços onde pretende colaborar</label>
+                            <select class="form-control" id="{{ form.Service.id_for_label }}" name="{{ form.Service.html_name }}" maxlength="{{ form.Service.field.max_length }}">
+                                <option>Mediação de Obras</option>
+                                <option>Alarmes e Portas</option>
+                                <option>Produtos, Alimentos e Bebidas</option>
+                                <option>Investimento Imobiliário</option>
+                                <option>Trading</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="{{ form.Message.id_for_label }}" class="contact-form-text">Mensagem</label>
+                            <textarea rows="5" class="form-control contact-form-field"  id="{{ form.Message.id_for_label }}" name="{{ form.Message.html_name }}"  maxlength="{{ form.Message.field.max_length }}" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                <label class="form-check-label contact-form-text" for="defaultCheck1">
+                                    Aceito fornecer os meus dados à Margem Frontal em ordem a receber
+    informações e possíveis oportunidades
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <input class="btn btn-primary contact-button" type="submit">Enviar</input>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+   <div id="contacts" class="container-fluid container-contacts pt-5 pb-5">
+        <div class="col-lg-8 offset-lg-2">
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="id_Name" class="contact-form-text">Nome:</label>
+                            <input type="text" name="Name" maxlength="100" class="form-control contact-form-field" required="" id="id_Name" >
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="id_Email" class="contact-form-text">Email:</label>
+                            <input type="email" name="Email" maxlength="50" class="form-control contact-form-field" required="" id="id_Email">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row justify-content-center">
+                    <div class="col-md-3 mb-3">
+                        <div class="form-group">
+                            <label for="id_DistrictHome" class="contact-form-text">Districthome:</label>
+                            <input type="text" name="DistrictHome" maxlength="30" class="form-control contact-form-field" required="" id="id_DistrictHome">
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-3">
+                        <div class="form-group">
+                            <label for="id_DistrictWork" class="contact-form-text">Districtwork:</label>
+                            <input type="text" name="DistrictWork" maxlength="30" class="form-control contact-form-field" required="" id="id_DistrictWork">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="id_Preference" class="contact-form-text">Preference:</label>
+                            <select class="form-control" name="Preference" maxlength="100" id="id_Preference">
+                                <option selected="selected">Diretor Comercial</option>
+                                <option>Consultor</option>
+                                <option>Comissionista</option>
+                                <option>Técnico</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="id_Service" class="contact-form-text">Service:</label>
+                            <select class="form-control" name="Service" maxlength="100" id="id_Service" >
+                                <option selected="selected">Mediação de Obras</option>
+                                <option>Alarmes e Portas</option>
+                                <option>Produtos, Alimentos e Bebidas</option>
+                                <option>Investimento Imobiliário</option>
+                                <option>Trading</option>
+                                <option>Outros</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <label for="id_Message" class="contact-form-text" >Message:</label>
+                            <textarea rows="5" type="text" name="Message" maxlength="500" class="form-control contact-form-field"  required="" id="id_Message"></textarea> 
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-row justify-content-center">
+                        <div class="col-md-8 mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                                <label class="form-check-label contact-form-text" for="defaultCheck1">
+                                    Aceito fornecer os meus dados à Margem Frontal em ordem a receber
+    informações e possíveis oportunidades
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <input class="btn btn-primary contact-button" type="submit">Enviar</input>
+                </div>
+            </form>
+
+    </div>
+</div>
+
+<!-- Copyright -->
+    <div class="container-fluid container-footer footer-copyright text-center pt-5 py-3">
+    <p class="copyright-text">© 2020
+        <a href="https://margemfrontal.com/"> Margem Frontal</a> - Todos os direitos reservados</p>
+    </div>
+<!-- Copyright -->
+
+
+</body>
+
+</html>

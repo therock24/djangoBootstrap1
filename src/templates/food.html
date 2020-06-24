@@ -1,0 +1,120 @@
+{% load static %}
+{% load i18n %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'jmap/jqvmap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    <link href="{% static 'fa/css/all.min.css' %}" media="screen" rel="stylesheet" type="text/css">
+    <script src="{% static 'js/jquery-3.4.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <title>Margem Frontal - Contactos</title>
+
+</head>
+
+<body class="container-footer">
+
+{% include "navbar.html" %}
+
+<div class="container-fluid text-center col-10 col-md-8 my-3 py-3">
+    <h1 class="contact-h1">{% trans 'Margem Frontal' %}</h1>
+    <h1 class="contact-h1">{% trans 'ALIMENTAR' %}</h1>
+</div>
+
+<div id="portfolio" class="service-content-container container-fluid py-5 justify-content-center row">
+        <div class="col-10 col-md-10 col-lg-8">
+            <div class="pb-5">
+                <b class="service-list-title">{% trans 'Bebidas Alcoólicas:' %}</b>
+                <ul class="service-list-items">
+                    <li>{% trans "Vinho Maduro Branco e Tinto" %}</li>
+                    <li>{% trans "Vinho Verde Branco e Tinto" %}</li>
+                    <li>{% trans "Vinho Rosé" %}</li>
+                    <li>{% trans "Espumante" %}</li>
+                    <li>{% trans "Vinho do Porto" %}</li>
+                    <li>{% trans "Aguardente" %}</li>
+                    <li>{% trans "Brandy e outros" %}</li>
+                </ul>
+                <b class="service-list-title">{% trans 'Bebidas não alcoólicas:' %}</b>
+                <ul class="service-list-items">
+                    <li>{% trans "Refrigerantes" %}</li>
+                    <li>{% trans "Água Mineral" %}</li>
+                </ul>
+                <b class="service-list-title">{% trans 'Charcutaria:' %}</b>
+                <ul class="service-list-items">
+                    <li>{% trans "Enchidos" %}</li>
+                    <li>{% trans "Queijos" %}</li>
+                    <li>{% trans "Presunto" %}</li>
+                    <li>{% trans "Refeições Pré-Cozinhadas" %}</li>
+                </ul>
+                <b class="service-list-title">{% trans 'Produtos Lácteos:' %}</b>
+                <ul class="service-list-items">
+                    <li>{% trans "Leite" %}</li>
+                    <li>{% trans "Manteiga e Derivados" %}</li>
+                </ul>
+                <b class="service-list-title">{% trans 'Conservas:' %}</b>
+                <ul class="service-list-items">
+                    <li>{% trans "Carne" %}</li>
+                    <li>{% trans "Peixe" %}</li>
+                    <li>{% trans "Vegetais" %}</li>
+                    <li>{% trans "Leguminosas" %}</li>
+                    <li>{% trans "Azeitonas" %}</li>
+                    <li>{% trans "Óleo" %}</li>
+                    <li>{% trans "Azeite" %}</li>
+                    <li>{% trans "Mel" %}</li>
+                </ul>
+                <b class="service-list-title">{% trans 'Bacalhau:' %}</b>
+                <ul class="service-list-items">
+                    <li>{% trans "Bacalhau seco" %}</li>
+                    <li>{% trans "Bacalhau congelado" %}</li>
+                </ul>
+                <b class="service-list-title">{% trans 'Produtos Gourmet' %}</b><br>
+                <b class="service-list-title">{% trans 'Perfumaria' %}</b><br>
+                <b class="service-list-title">{% trans 'Produtos de Higiene Pessoal' %}</b><br>
+                <b class="service-list-title">{% trans 'Detergentes e Sabão' %}</b><br>
+
+            </div>
+            
+            <div class"container" style="position: relative;">
+                <div class="row">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 pb-4">
+                        <img src="{% static 'img/food/1.jpg' %}" class="img-fluid" id="portfolio_img1" onclick="portfolio_overlay_open(1);">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 pb-4">
+                        <img src="{% static 'img/food/2.jpg' %}" class="img-fluid" id="portfolio_img2" onclick="portfolio_overlay_open(2);">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 pb-4">
+                        <img src="{% static 'img/food/3.jpg' %}" class="img-fluid" id="portfolio_img3" onclick="portfolio_overlay_open(3);">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 pb-4">
+                        <img src="{% static 'img/food/4.jpg' %}" class="img-fluid" id="portfolio_img4" onclick="portfolio_overlay_open(4);">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 pb-4">
+                        <img src="{% static 'img/food/5.jpg' %}" class="img-fluid" id="portfolio_img5" onclick="portfolio_overlay_open(5);">
+                    </div>
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3 pb-4">
+                        <img src="{% static 'img/food/6.jpg' %}" class="img-fluid" id="portfolio_img6" onclick="portfolio_overlay_open(6);">
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+{% include 'contacts.html' %} 
+
+{% include 'footer.html'%}
+
+</body>
+
+</html>
