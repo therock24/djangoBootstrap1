@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-06-24 13:54+0000\n"
-"PO-Revision-Date: 2020-06-24 14:58+0100\n"
+"POT-Creation-Date: 2020-07-15 21:18+0000\n"
+"PO-Revision-Date: 2020-07-15 22:19+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -72,8 +72,8 @@ msgstr ""
 "                            Vidéosurveillance, sécurité et domotique. "
 
 #: templates/about.html:25
-msgid "CONSTRUÇÃO e REABILITAÇÃO"
-msgstr "CONSTRUCTION et RÉHABILITATION"
+msgid "CONSTRUÇÃO&nbsp;e REABILITAÇÃO"
+msgstr "CONSTRUCTION&nbsp;et RÉHABILITATION"
 
 #: templates/about.html:25
 msgid ""
@@ -157,8 +157,8 @@ msgid "Margem Frontal"
 msgstr "Margem Frontal"
 
 #: templates/construction.html:33
-msgid "CONSTRUÇÃO e"
-msgstr "CONSTRUCTION et"
+msgid "CONSTRUÇÃO&nbsp;e"
+msgstr "CONSTRUCTION&nbsp;et"
 
 #: templates/construction.html:34 templates/services.html:30
 msgid "REABILITAÇÃO"
@@ -767,8 +767,8 @@ msgid "Segurança"
 msgstr "Sécurité"
 
 #: templates/navbar.html:23 templates/services.html:72
-msgid "Construção e Reabilitação"
-msgstr "Construction et réhabilitation"
+msgid "Construção&nbsp;e Reabilitação"
+msgstr "Construction&nbsp;et réhabilitation"
 
 #: templates/navbar.html:24 templates/services.html:75
 msgid "Imobiliária"
@@ -867,8 +867,8 @@ msgid "SERVIÇOS"
 msgstr "SERVICES"
 
 #: templates/services.html:30
-msgid "CONSTRUÇÃO e "
-msgstr "CONSTRUCTION et "
+msgid "CONSTRUÇÃO&nbsp;e "
+msgstr "CONSTRUCTION&nbsp;et "
 
 #: templates/services_v1.html:12 templates/services_v1.html:45
 msgid "Mediação Imobiliária"
